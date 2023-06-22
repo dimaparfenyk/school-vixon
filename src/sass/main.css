@@ -1,0 +1,39 @@
+p,
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0px;
+}
+
+body {
+  background: #ffffff;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */

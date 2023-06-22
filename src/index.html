@@ -3,14 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <title>Vixon School</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Nunito+Sans:ital,wght@0,600;0,700;0,800;1,400&family=Raleway:wght@700&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./sass/main.scss" />
     <script type="module" src="./index.js"></script>
   </head>
-  <body>
-
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+  
     
+  <body>
+     <header class="header">
+      <div class="header-container container">
+      <a href="index.html" class="logo">
+        <img class="logo-img" src="./images/logo.png" alt="Logo" > 
+      </a>
+      <nav class="nav">
+        <ul class="nav-list list">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Про нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./partials/children-courses.html">Для дітей</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./partials/teacher-courses.html">Освітянам</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./partials/faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./partials/contacts.html">Contacts</a>
+            </li>
+         </ul>
+        </nav>
+        <select class="lang-select" name="language">
+          <option value="ua">UA</option>
+          <option value="en">EN</option>
+          <option value="ru">RU</option>
+      </select>
+      <div class="phone-box">
+        <button class="callback-btn">Зворотній зв'язок</button>
+        <a class="phone-link" href="tel:+88006592684">
+            <svg  width="16px" height="16px">
+                <use href="./images/phone.svg#icon-phone"></use>
+            </svg>
+        +38 (800) 659-2684
+        </a>
+    </div>
+  </div>
+    </header>
+   
+    <!-- <main>
+    <h1>About Us</h1>
+   
+
+    </main>
+    
+    <footer>
+      <nav class="navigation container">
+        <ul class="list">
+          <li><a href="index.html">Про нас</a></li>
+          <li><a href="./partials/children-courses.html">Для дітей</a></li>
+          <li><a href="./partials/teacher-courses.html">Освітянам</a></li>
+          <li><a href="./partials/faq.html">FAQ</a></li>
+          <li><a href="./partials/contacts.html">Contacts</a></li>
+         </ul>
+      </nav>
+    </footer> -->
+
   </body>
 </html>
