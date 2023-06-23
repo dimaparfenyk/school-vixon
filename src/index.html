@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="./sass/main.scss" />
     <script type="module" src="./index.js"></script>
   </head>
-  
-    
+   
   <body>
      <header class="header">
-      <div class="header-container container">
+      <div class="container">
       <a href="index.html" class="logo">
         <img class="logo-img" src="./images/logo.png" alt="Logo" > 
       </a>
@@ -33,7 +32,7 @@
               <a class="nav-link" href="./partials/faq.html">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./partials/contacts.html">Contacts</a>
+              <a class="nav-link" href="./partials/contacts.html">Контакти</a>
             </li>
          </ul>
         </nav>
@@ -45,22 +44,34 @@
       <div class="phone-box">
         <button class="callback-btn">Зворотній зв'язок</button>
         <a class="phone-link" href="tel:+88006592684">
-            <svg  width="16px" height="16px">
+            <svg  width="14px" height="14px">
                 <use href="./images/phone.svg#icon-phone"></use>
             </svg>
-        +38 (800) 659-2684
+        +8 (800) 659-2684
         </a>
     </div>
+    <svg class="menu" width="48px" height="24px" fill="grey">
+      <use href="./images/menu.svg#icon-menu"></use>
+  </svg>
   </div>
     </header>
    
-    <!-- <main>
-    <h1>About Us</h1>
-   
-
+    <main>
+    <section class="section hero">
+    <div class="container">
+      <div class="hero-content-box">
+        <h1 class="title">Вітаємо в Vixon School </h1>
+        <p class="hero-text">Lorem Ipsum has been the industry’s standard 
+          dummy text ever since the 1500s, when an unknown 
+          printer took a galley of type and scrambled it to
+           make a type specimen book. </p>
+           <button class="btn hero-btn">Записатись</button>
+      </div>
+    </div>
+    </section>
     </main>
     
-    <footer>
+    <!-- <footer>
       <nav class="navigation container">
         <ul class="list">
           <li><a href="index.html">Про нас</a></li>
