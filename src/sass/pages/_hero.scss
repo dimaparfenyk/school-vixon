@@ -1,6 +1,6 @@
 .hero{
     width: 100%;
-    background-image: url('../images/hero/bg-img.png'),
+    background-image: url('../images/hero/bg.png'),
     linear-gradient(180deg, #6BBC60 0%, #56A04C 44.60%, #55A04A 61.84%, #6BBC60 100%);
     background-repeat: no-repeat;
     background-position: center;
@@ -28,7 +28,7 @@
 }
 
 .hero-content-box{
-    max-width: 320px;
+    max-width: 307px;
     margin-bottom: 28px;
 
     @media screen and (min-width: 768px) {
@@ -66,8 +66,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 285px;
-    height: 48px;
+    max-width: 285px;
+    max-height: 48px;
     padding: 14px 72px;
     text-transform: uppercase;
     font-size: 14px;
@@ -85,12 +85,11 @@
     width: 360px;
         @media screen and (min-width: 768px) {
             position: absolute;
-            right: -20px;
+            right: 1%;
             bottom:0;
             width: 470px;
         } 
         @media screen and (min-width: 1200px) {
-            right: 5%;
             width: 630px;
         } 
 }
