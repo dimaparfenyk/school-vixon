@@ -1,0 +1,170 @@
+.about{
+    padding-bottom: 80px;
+    background-image: url('../images/about/about-bg.png');
+    background-repeat: no-repeat;
+    background-position: top 0 right 0, top right;
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 160px;
+    } 
+}
+
+.about > .container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   @media screen and (min-width: 768px) {
+    flex-direction: row;
+} 
+@media screen and (min-width: 1200px) {
+    align-items: none;
+} 
+}
+
+.about > .subtitle{
+    text-align: center;
+}
+
+.block-title{
+margin-bottom: 32px;
+color: $darkTextColor;
+font-size: 32px;
+font-family: Nunito Sans;
+font-weight: 600;
+text-align: center;
+@media screen and (min-width: 768px) {
+    text-align-last: left;
+} 
+}
+
+.about-text{
+    color: $darkTextColor;
+    font-size: 20px;
+    font-family: Nunito Sans;
+}
+
+.about-text + .about-text{
+    margin-top: 22px;
+    margin-bottom: 32px;
+}
+
+.img-description{
+color: $darkTextColor;
+font-size: 24px;
+font-family: Nunito Sans;
+font-weight: 600;
+
+@media screen and (min-width: 1200px) {
+    font-size: 32px;
+} 
+}
+
+.img-description > span{
+    @media screen and (min-width: 768px) {
+        font-size: 32px;
+    } 
+    @media screen and (min-width: 1200px) {
+        font-size: 64px;
+    }   
+}
+
+.about-img-box{
+    position: relative;
+}
+
+.about-img-box > .first{
+    position: absolute;
+    bottom: 24%;
+    right: 20px;
+    @media screen and (min-width: 768px) {
+        right: -16px;
+    } 
+    @media screen and (min-width: 1200px) {
+        bottom: 18%;
+        right: -64px;
+    } 
+   
+}
+
+.about-img-box > .second{
+    position: absolute;
+    bottom: -20px;
+    left: 32%;
+    @media screen and (min-width: 768px) {
+        bottom: -32px;
+    } 
+
+    @media screen and (min-width: 1200px) {
+        bottom: -60px;
+    } 
+}
+
+.post-about{
+    padding-top: 44px;
+    padding-bottom: 44px;
+    width: 100%;
+    background-image:linear-gradient(180deg, #6BBC60 0%, #56A04C 44.60%, #55A04A 61.84%, #6BBC60 100%);
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+    padding-bottom: 60px;
+    } 
+}
+
+.post-about> .container{
+    display: flex;
+}
+
+.post-about-list{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    } 
+
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+        gap: 129px;
+        flex-wrap: nowrap;
+    } 
+}
+
+.post-about-item{
+    display: flex;
+    flex-direction: column;
+    
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 32px) / 2); 
+        align-items: center;
+    justify-content: center;
+            } 
+        @media screen and (min-width: 1200px) {
+            width: auto;
+            flex-basis: calc((100% - 387px) / 4); 
+            } 
+}
+
+.post-about-item+.post-about-item{
+    margin-top: 36px;
+    @media screen and (min-width: 768px) {
+        margin-top: 0; 
+            } 
+}
+
+.post-about-img{
+    margin-bottom: 18px;
+}
+
+.postabout-text{
+font-size: 24px;
+font-weight: 700;
+line-height: 1.6;
+text-align: center;
+@media screen and (min-width: 1200px) {
+    font-size: 21px;
+        } 
+}
