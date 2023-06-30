@@ -1,0 +1,54 @@
+.certificate-reviews{
+    position: relative;
+    background-image: url('../images/certificate/certificate-bg.png');
+    background-repeat: no-repeat;
+    background-position: top -135px right -60px, top right;
+}
+
+.certificate{
+padding-top: 60px;
+
+@media screen and (min-width: 768px) {
+    padding-top: 80px;
+}
+
+@media screen and (min-width: 1200px) {
+    padding-top: 160px;
+} 
+}
+
+.certificate > .subtitle{
+    text-align: center;
+}
+
+.certificate-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    @media screen and (min-width: 768px) {
+        gap: 20px 28px;
+    } 
+
+    @media screen and (min-width: 1200px) {
+        gap: 12px 28px;
+    } 
+}
+
+.certificate-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 28px) / 2); 
+            } 
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 56px) / 3); 
+            } 
+}
+
+.certificate-img{
+    width: 100%;
+}
+

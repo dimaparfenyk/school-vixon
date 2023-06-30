@@ -1,0 +1,12 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="left-arr" viewBox="0 0 31 32">
+<path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color2, #6bbc60)" stroke="#6bbc60" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.561" d="M0.78 15.967c0-8.19 6.639-14.829 14.829-14.829s14.829 6.639 14.829 14.829c0 8.19-6.639 14.829-14.829 14.829s-14.829-6.639-14.829-14.829z"></path>
+<path fill="#6bbc60" style="fill: var(--color2, #6bbc60)" d="M8.562 15.967l3.902 2.253v-4.506l-3.902 2.253zM21.854 15.577h-9.779v0.781h9.779v-0.78z"></path>
+</symbol>
+<symbol id="right-arr" viewBox="0 0 31 32">
+<path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color2, #6bbc60)" stroke="#6bbc60" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.561" d="M30.439 15.967c0 8.19-6.639 14.829-14.829 14.829s-14.829-6.639-14.829-14.829c0-8.19 6.639-14.829 14.829-14.829s14.829 6.639 14.829 14.829z"></path>
+<path fill="#6bbc60" style="fill: var(--color2, #6bbc60)" d="M22.657 15.967l-3.902-2.253v4.506l3.902-2.253zM9.366 16.357h9.779v-0.78h-9.779v0.78z"></path>
+</symbol>
+</defs>
+</svg>
