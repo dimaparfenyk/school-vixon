@@ -1,3 +1,15 @@
 .footer{
+    padding-top: 36px;
+    padding-bottom: 72px;
     background-color: $footerBackground;
+}
+
+.footer-nav-list{
+    display: flex;
+  
+}
+.footer-nav-link{
+    color: $lightTextColor;
+    font-size: 14px;
+    font-family: Nunito Sans;
 }
