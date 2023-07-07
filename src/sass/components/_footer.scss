@@ -4,12 +4,76 @@
     background-color: $footerBackground;
 }
 
+.footer > .container{
+display: flex;
+}
+
+.company-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav{
+margin-left: auto;
+margin-bottom: 32px;
+}
+
 .footer-nav-list{
     display: flex;
   
 }
+.footer-nav-item:not(:last-child) {
+    margin-right: 80px;
+  }
+
 .footer-nav-link{
     color: $lightTextColor;
     font-size: 14px;
     font-family: Nunito Sans;
+}
+
+.contacts{
+    display: flex;
+}
+
+.phone-link,
+.mail-link{
+    color: #FFF;
+    font-size: 12px;
+    font-family: Nunito Sans;
+    line-height: 150%;
+}
+
+.mail-img{
+    width: 28px;
+    height: 20px;
+}
+
+.mail-img,
+.phone-img{
+    margin-right: 32px;
+}
+
+.footer-contacts{
+    display: flex;
+}
+
+.footer-contacts:not(:last-child){
+    margin-right: 64px;
+}
+
+.local-marker{
+    width: 20px;
+    height: 26px;
+    margin-right: 32px;
+}
+
+.clock-img{
+    width: 26px;
+    height: 26px;
+    margin-right: 32px;
+}
+
+.work-time{
+    padding-left: 32px;
 }
