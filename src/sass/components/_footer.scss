@@ -25,8 +25,6 @@ flex-direction: column;
      }
 }
 
-
-
 .company-info{
     display: flex;
     flex-direction: column;
@@ -74,7 +72,7 @@ margin-bottom: 32px;
      }
 }
 
-.phone-link,
+.footer-contacts > .phone-link,
 .mail-link{
     display: flex;
     color: #FFF;

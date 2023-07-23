@@ -15,30 +15,59 @@
 }
 
 .mob-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+
     overflow: auto;
 
     width: 100vw;
     height: 100vh;
-    z-index: 5;
+    z-index: 10;
 
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
     padding-right: 15px;
-    background-color: #ffffff;
+    background-color: #F4FFF6;
 
     &.is-hidden {
-        opacity: 0;
-        pointer-events: none;
+        display: none;
     }
 }
+.mob-menu-closeBtn{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: inherit;
+    border: none;
+}
 
+.mob-menu_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.mob-menu_item{
+    padding: 8px;
+}
+
+.mob-menu_item:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.mob-menu-link{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight:700;
+    color: #0B221C;
+}
 .nav{
     display: none;
     margin-left:auto;
@@ -79,11 +108,15 @@
 }
 
 .lang-select{
-    margin-left: 24px;
+    
     border: none;
     color: $darkTextColor;
     font-size: 16px;
     font-weight: 500;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 24px;
+    }
     @media screen and (min-width: 1200px) {
         margin-left: 42px;
         font-size: 16px;
@@ -125,18 +158,41 @@
     }
 }
 
-.footer-phone-link{
+.phone-link{
     color: $darkTextColor;
     font-size: 12px;
     font-family: Nunito Sans;
+    margin: 0 auto;
     @media screen and (min-width: 1200px) {
         font-size: 14px;
     }
 }
 
-.menu{
-    @media screen and (min-width: 768px) {
-        display: none;
+.mob-menu-phone-link{
+    color: $darkTextColor;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    margin: 0 auto;
+}
+
+.mob-menu__telbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mob-menu__telbox>.callback-btn{
+    width: 180px;
+    padding: 16px;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.nav-menu-btn{
+    background-color: inherit;
+    border: none;
+@media screen and (min-width: 768px) {
+        display: none;    
     }
 }
 
