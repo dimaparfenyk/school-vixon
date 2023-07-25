@@ -67,6 +67,10 @@
     font-size: 18px;
     font-weight:700;
     color: #0B221C;
+    scale: 1;
+    &:hover{
+        scale: 1.1;
+    }
 }
 .nav{
     display: none;
@@ -162,7 +166,7 @@
     color: $darkTextColor;
     font-size: 12px;
     font-family: Nunito Sans;
-    margin: 0 auto;
+    // margin: 0 auto;
     @media screen and (min-width: 1200px) {
         font-size: 14px;
     }

@@ -95,7 +95,7 @@
     align-items: baseline;
 
     padding: 24px 52px 24px 24px;
-    max-width: 311px;
+    width: 311px;
     max-height: 252px;
 
     border-radius: 8px;
@@ -155,22 +155,45 @@ font-family: Nunito Sans;
 line-height: 150%;
 }
 
-.arrow-left{
-    margin-right: 12px;
-    @media screen and (min-width: 768px) {
-        margin-right: 24px;
-    } 
-    @media screen and (min-width: 1200px) {
-        margin-right: 32px;
-    } 
+// SLICK CAROUSEL
+
+.content {
+    margin: auto;
+    padding: 30px;
+    width: 100%;
+    max-width: 974px;
+    z-index: 10;
+  }
+
+  .slider > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #6BBC60;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    background-color: #6BBC60;
+  }
+
+  .slider>.slick-prev:hover, 
+  .slider>.slick-prev:focus, 
+  .slider>.slick-next:hover, 
+  .slider>.slick-next:focus {
+     background: #6BBC60; 
 }
 
-.arrow-right{
-    margin-left: 12px;
-    @media screen and (min-width: 768px) {
-        margin-left: 24px;
-    } 
-    @media screen and (min-width: 1200px) {
-        margin-left: 32px;
-    } 
-}
+  .slider>.slick-prev{
+    left: -45px;
+  }
+
+  .slider> .slick-next{
+    right: -45px;
+  }
+
+  
+
+
+ 

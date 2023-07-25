@@ -8,6 +8,11 @@
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Nunito+Sans:ital,wght@0,600;0,700;0,800;1,400&family=Raleway:wght@700&family=Roboto:wght@400;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+ 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="module" src="./index.js"></script>
   </head>
    
@@ -260,13 +265,9 @@
       <section class="reviews">
         <h2 class="subtitle">Відгуки</h2>
         <div class="container">
-      <div class="carousel">
-        <div class="carousel-inner">
-          <svg class="arrow-left" width="40" height="40">
-            <use href="./images/review/icon.svg#left-arr"></use>
-          </svg>
-          <ul class="review-list">
-          <li class="review-item">
+      <div class="content">
+          <div class="slider responsive">
+          <div class="review-item">
             <div class="reviewer-box">
             <img src="../src/images/review/review1.jpg" alt="">
             <p class="reviewer-name">José Asueta</p>
@@ -277,8 +278,8 @@
                 dolore magna aliqua. 
               </p>
              <span class="review-date">22.02.22</span>
-          </li>
-          <li class="review-item">
+          </div>
+          <div class="review-item">
             <div class="reviewer-box">
             <img src="../src/images/review/review2.jpg" alt="">
             <p class="reviewer-name">José Asueta</p>
@@ -289,8 +290,8 @@
                 dolore magna aliqua. 
               </p>
               <span class="review-date">22.02.22</span>
-          </li>
-          <li class="review-item">
+          </div>
+          <div class="review-item">
             <div class="reviewer-box">
             <img src="../src/images/review/review3.jpg" alt="">
             <p class="reviewer-name">José Asueta</p>
@@ -301,19 +302,21 @@
                 dolore magna aliqua. 
               </p>
               <span class="review-date">22.02.22</span> 
-          </li>
-          </ul>
-          <svg class="arrow-right" width="40" height="40">
-            <use href="./images/review/icon.svg#right-arr"></use>
-          </svg>
+          </div>
+          <div class="review-item">
+            <div class="reviewer-box">
+            <img src="../src/images/review/review2.jpg" alt="">
+            <p class="reviewer-name">José Asueta</p>
+            </div>
+              <p class="review-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. 
+              </p>
+              <span class="review-date">22.02.22</span> 
+          </div>
+        </div> 
         </div>
-        <div class="points-box">
-          <div class="point"></div>
-          <div class="point"></div>
-          <div class="point"></div>
-          <div class="point"></div>
-        </div>
-      </div>
         </div>
       </section>
     </section>
@@ -379,7 +382,7 @@
     </div>
     </footer>
 
-    <script src="../src/js/mobMenu-nav.js"></script>
-
+    <script type="module" src="../src/js/mobMenu-nav.js"></script>
+    <script type="module" src="../src/js/pagination.js"></script>
   </body>
 </html>
