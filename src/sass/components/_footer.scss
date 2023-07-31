@@ -1,206 +1,205 @@
-.footer{
-    padding-top: 36px;
-    padding-bottom: 48px;
-    background-color: $footerBackground;
-     @media screen and (min-width: 1200px) {
-       padding-bottom: 72px;
-     }
+.footer {
+  padding-top: 36px;
+  padding-bottom: 48px;
+  background-color: $footerBackground;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 72px;
+  }
 }
 
-.footer > .container{
-display: flex;
-align-items: center;
-flex-direction: column;
-@media screen and (min-width: 768px) {
+.footer > .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
     flex-direction: row;
     align-items: flex-start;
- }
+  }
 }
 
-.footer-logo{
-    height: 82px;
-    margin-bottom: 32px;
-    @media screen and (min-width: 768px) {
-        margin-bottom: 0;
-     }
+.footer-logo {
+  height: 82px;
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
-.company-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media screen and (min-width: 768px) {
-        margin-left: auto;
-     }  
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
 }
 
-.footer-nav{
-margin-bottom: 32px;
+.footer-nav {
+  margin-bottom: 32px;
 }
 
-.footer-nav-list{
-    display: flex;
-  
+.footer-nav-list {
+  display: flex;
 }
 .footer-nav-item:not(:last-child) {
-   margin-right: 12px;
-   @media screen and (min-width: 480px) {
+  margin-right: 12px;
+  @media screen and (min-width: 480px) {
     margin-right: 32px;
- }
-    @media screen and (min-width: 768px) {
-        margin-right: 40px;
-     }
-     @media screen and (min-width: 1200px) {
-        margin-right: 80px;
-     }  
   }
-
-.footer-nav-link{
-    color: $lightTextColor;
-    font-size: 12px;
-    font-family: Nunito Sans;
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-     }
+  @media screen and (min-width: 768px) {
+    margin-right: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 80px;
+  }
 }
 
-.contacts{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    @media screen and (min-width: 768px) {
-       flex-direction: row;
-     }
+.footer-nav-link {
+  color: $lightTextColor;
+  font-size: 12px;
+  font-family: Nunito Sans;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .footer-contacts > .phone-link,
-.mail-link{
-    display: flex;
-    color: #FFF;
-    font-family: Nunito Sans;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
+.mail-link {
+  display: flex;
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 
-.phone-link{
-    margin-bottom: 12px;
-    @media screen and (min-width: 768px) {
-        margin-bottom: 6px;
-     } 
-     @media screen and (min-width: 1200px) {
-        margin-right: 55px;
-        margin-bottom: 0;
-     } 
+.footer-contacts > .phone-link {
+  margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 6px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 55px;
+    margin-bottom: 0;
+  }
 }
 
-.mail-img{
-    width: 28px;
-    height: 20px;
-    margin-right: 8px;
-    @media screen and (min-width: 1200px) {
-        margin-right: 24px;
-     }
+.mail-img {
+  width: 28px;
+  height: 20px;
+  margin-right: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 16px;
+  }
 }
 
-.phone-img{
-    margin-right: 8px;
-    @media screen and (min-width: 1200px) {
-        margin-right: 32px;
-     }
+.phone-img {
+  margin-right: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 16px;
+  }
 }
 
-.footer-contacts{
-    display: flex;
-    justify-content: center;
+.footer-contacts {
+  display: flex;
+  justify-content: center;
 }
 
-.footer-contacts:last-child{
-    display: flex;
-    flex-direction: column;
-    @media screen and (min-width: 1200px) {
-        flex-direction: row;
-    } 
+.footer-contacts:last-child {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
-.footer-contacts:not(:last-child){
-    margin-bottom: 32px;
-    @media screen and (min-width: 768px) {
-        margin-right: 32px;
-        margin-bottom: 0;
-     } 
-     @media screen and (min-width: 1200px) {
-        margin-right: 64px;
-     } 
+.footer-contacts:not(:last-child) {
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 64px;
+  }
 }
 
-.local-marker{
-    width: 20px;
-    height: 26px;
-    margin-right: 12px;
-    @media screen and (min-width: 1200px) {
-        margin-right: 32px;
-     }
+.local-marker {
+  width: 20px;
+  height: 26px;
+  margin-right: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 32px;
+  }
 }
 
-.clock-img{
-    width: 26px;
-    height: 26px;
-    margin-right: 8px;
-    @media screen and (min-width: 1200px) {
-        margin-right: 32px;
-     }
+.clock-img {
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 32px;
+  }
 }
 
-.text-box{
-    display: flex;
-    justify-content: space-between;
+.text-box {
+  display: flex;
+  justify-content: space-between;
 }
 
-.work-time{
-    padding-left: 10px;
-    @media screen and (min-width: 1200px) {
-        padding-left: 32px;
-     }
+.work-time {
+  padding-left: 10px;
+  @media screen and (min-width: 1200px) {
+    padding-left: 32px;
+  }
 }
 
-.contact-wrapper >p:not(:last-child){
-    color: #FFF;
-font-family: Nunito Sans;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height:  18px;
+.contact-wrapper > p:not(:last-child) {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
 }
 
-.contact-wrapper>p:last-child{
-color: #FFF;
-font-family: Nunito Sans;
-font-size: 12px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%;
+.contact-wrapper > p:last-child {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 
-.text-box > p{
-color: var(--white, #FFF);
-font-family: Nunito Sans;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height:  18px;
+.text-box > p {
+  color: var(--white, #fff);
+  font-family: Nunito Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
 }
 
-.text-box > span{
-    color: #FFF;
-    font-family: Nunito Sans;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%; 
+.text-box > span {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 
-.mail-wrapper{
-    display: flex;
+.mail-wrapper {
+  display: flex;
 }

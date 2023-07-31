@@ -1,0 +1,101 @@
+.subtitle {
+  margin-bottom: 32px;
+  color: $darkTextColor;
+  font-size: 28px;
+  text-align: center;
+
+  font-family: Nunito Sans;
+  font-weight: 700;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
+    font-size: 40px;
+  }
+}
+
+.courses {
+  padding-top: 36px;
+  padding-bottom: 72px;
+  width: 100%;
+  background-image: url('../images/courses/courses-bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 0, bottom left;
+  @media screen and (min-width: 768px) {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 80px;
+    padding-bottom: 174px;
+    margin-bottom: -40px;
+  }
+}
+
+.courses > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.courses-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
+}
+
+.courses-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 4);
+  }
+}
+
+.courses-item:nth-child(n + 3) {
+  @media screen and (min-width: 768px) {
+    margin-top: 28px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+}
+
+.courses-circle {
+  border-radius: 50%;
+  background-color: $sectionBgColor;
+  width: 222px;
+  height: 222px;
+  position: relative;
+}
+
+.courses-category {
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  width: 100%;
+  color: $darkTextColor;
+  background-color: $headerBackground;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 6px;
+  box-shadow: 2px 5px 11px 0px rgba(153, 175, 153, 0.25);
+
+  color: $darkTextColor;
+  font-size: 24px;
+  font-family: Nunito Sans;
+}

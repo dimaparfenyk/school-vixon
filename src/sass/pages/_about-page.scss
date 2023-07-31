@@ -1,0 +1,161 @@
+.about-us-section > .container {
+  padding-top: 24px;
+}
+
+.about-section {
+  padding-bottom: 96px;
+}
+
+.about-section {
+  &__subtitle {
+    color: #0b221c;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+  &__img {
+    margin-right: 32px;
+  }
+}
+
+.top-wrapper {
+  display: flex;
+  color: #0b221c;
+  margin-bottom: 77px;
+}
+.about-block {
+  max-width: 75%;
+  &__title {
+    max-width: 380px;
+    margin-bottom: 27px;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 135%;
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.text-container {
+  margin-right: 48px;
+}
+
+.bottom-wrapper {
+  display: flex;
+  max-width: 65%;
+  margin: 0 auto;
+  color: #0b221c;
+}
+
+.teacher-info-box {
+  padding: 24px;
+  gap: 10px;
+}
+
+.teacher-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 12px;
+  box-shadow: 1px 1px 12px 0px rgba(21, 20, 8, 0.1);
+
+  background-color: #f4fff6;
+  &__img {
+    width: 238px;
+    border-radius: 9px;
+    border: 2px solid #afd8aa;
+  }
+
+  &__meta {
+    padding-left: 22px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 700;
+
+    &::before {
+      background-image: url('../images/page-about/person.png');
+    }
+  }
+
+  &__email {
+    font-size: 14px;
+    font-weight: 400;
+
+    &::before {
+      background-image: url('../images/page-about/email.png');
+    }
+  }
+
+  &__phone {
+    font-size: 14px;
+    font-weight: 400;
+
+    &::before {
+      background-image: url('../images/page-about/phone.png');
+    }
+  }
+}
+
+.teacher-prop {
+  position: relative;
+  color: #0b221c;
+  padding-left: 18px;
+
+  &::before {
+    content: ' ';
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+  }
+}
+
+.teachers-team {
+  &__subtitle {
+    margin-bottom: 64px;
+    color: #0b221c;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.section {
+  &__subtitle {
+    color: #0b221c;
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+.teachers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  flex-basis: calc((100% - 96px) / 4);
+  &__item {
+    max-width: 286px;
+  }
+}

@@ -1,202 +1,197 @@
-.header{
-    padding-top: 9px;
-    padding-bottom: 9px;
-    background-color: $headerBackground;
+.header {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: $headerBackground;
 }
 
-.header > .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    @media screen and (min-width: 768px) {
-        justify-content: center;
-      }
+.header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .mob-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    overflow: auto;
+  overflow: auto;
 
-    width: 100vw;
-    height: 100vh;
-    z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
 
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 40px;
-    padding-right: 15px;
-    background-color: #F4FFF6;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 15px;
+  background-color: #f4fff6;
 
-    &.is-hidden {
-        display: none;
-    }
-}
-.mob-menu-closeBtn{
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    background-color: inherit;
-    border: none;
-}
-
-.mob-menu_list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 32px;
-}
-
-.mob-menu_item{
-    padding: 8px;
-}
-
-.mob-menu_item:not(:last-child){
-    margin-bottom: 12px;
-}
-
-.mob-menu-link{
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight:700;
-    color: #0B221C;
-    scale: 1;
-    &:hover{
-        scale: 1.1;
-    }
-}
-.nav{
+  &.is-hidden {
     display: none;
-    margin-left:auto;
-    @media screen and (min-width: 768px) {
-        display: block;
-    }
+  }
+}
+.mob-menu-closeBtn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: inherit;
+  border: none;
 }
 
-.nav-list{
-    display: flex;
+.mob-menu_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
 }
 
-.logo-img{
-    width: 100%;
-    @media screen and (min-width: 768px) {
-        width: 68px;
-        height: 60px;
-    }
+.mob-menu_item {
+  padding: 8px;
 }
 
-.nav-item + .nav-item{
+.mob-menu_item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.mob-menu-link {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0b221c;
+  scale: 1;
+  &:hover {
+    scale: 1.1;
+  }
+}
+.nav {
+  display: none;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.nav-list {
+  display: flex;
+}
+
+.logo-img {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 68px;
+    height: 60px;
+  }
+}
+
+.nav-item + .nav-item {
+  margin-left: 24px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 48px;
+  }
+}
+
+.nav-item {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.nav-link {
+  color: $darkTextColor;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Nunito Sans;
+}
+
+.lang-select {
+  border: none;
+  color: $darkTextColor;
+  font-size: 16px;
+  font-weight: 500;
+
+  @media screen and (min-width: 768px) {
     margin-left: 24px;
-    @media screen and (min-width: 1200px) {
-        margin-left: 48px;
-    }
-}
-
-.nav-item{
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
-.nav-link{
-    color: $darkTextColor;
-    font-size: 12px; 
-    font-weight: 400;
-    font-family: Nunito Sans;
-}
-
-.lang-select{
-    
-    border: none;
-    color: $darkTextColor;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 42px;
     font-size: 16px;
-    font-weight: 500;
-
-    @media screen and (min-width: 768px) {
-        margin-left: 24px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-left: 42px;
-        font-size: 16px;
-    }
+  }
 }
 
-.phone-box{
-   display: none;
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 32px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-left: 60px;
-    }
-}
-
-.callback-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 148px;
-    height: 28px;
-    margin-bottom: 12px;
-
-    border-radius: 4px;
-    background: $footerBackground;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    text-transform: uppercase;
-    color: $lightTextColor;
-    font-size: 10px;
-    font-family: Nunito Sans;
-    font-weight: 700;
-
-    @media screen and (min-width: 1200px) {
-        width: 180px;
-    }
-}
-
-.phone-link{
-    color: $darkTextColor;
-    font-size: 12px;
-    font-family: Nunito Sans;
-    // margin: 0 auto;
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-    }
-}
-
-.mob-menu-phone-link{
-    color: $darkTextColor;
-    font-size: 16px;
-    font-family: Nunito Sans;
-    margin: 0 auto;
-}
-
-.mob-menu__telbox{
+.phone-box {
+  display: none;
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 60px;
+  }
 }
 
-.mob-menu__telbox>.callback-btn{
+.callback-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 148px;
+  height: 28px;
+  margin-bottom: 12px;
+
+  border-radius: 4px;
+  background: $footerBackground;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  color: $lightTextColor;
+  font-size: 10px;
+  font-family: Nunito Sans;
+  font-weight: 700;
+
+  @media screen and (min-width: 1200px) {
     width: 180px;
-    padding: 16px;
-    font-size: 12px;
-    margin-bottom: 16px;
+  }
 }
 
-.nav-menu-btn{
-    background-color: inherit;
-    border: none;
-@media screen and (min-width: 768px) {
-        display: none;    
-    }
+.phone-box > .phone-link {
+  color: $darkTextColor;
+  font-size: 12px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
+.mob-menu-phone-link {
+  color: $darkTextColor;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.mob-menu__telbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mob-menu__telbox > .callback-btn {
+  width: 180px;
+  padding: 16px;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.nav-menu-btn {
+  background-color: inherit;
+  border: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
