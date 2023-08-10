@@ -33,9 +33,11 @@
   <body>
     <include src="./partials/header.html"></include>
     <main>
+      <div class="container title-container">
+        <h1 class="page-subtitle">Про нас</h1>
+      </div>
       <section class="about-section">
         <div class="container">
-          <h2 class="about-section__subtitle">Про нас</h2>
           <div class="top-wrapper">
             <img
               src="../images/page-about/class.jpg"
@@ -53,12 +55,12 @@
                 Sed massa amet convallis nascetur magnis auctor amet, fermentum,
                 lobortis.
               </p>
-              <p class="about-block__text">
+              <p class="about-block__text mob-hidden-text">
                 Pellentesque eu aliquam, sed sed nibh curabitur tellus. Sed
                 iaculis amet non nec tellus at nunc, nisi, eget. Volutpat erat
                 vel non id pellentesque egestas fusce ac.
               </p>
-              <p class="about-block__text">
+              <p class="about-block__text mob-hidden-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                 scelerisque ultricies senectus et. Dui elit egestas vitae
                 gravida rhoncus ipsum augue augue. Mattis nunc nec nulla
@@ -67,11 +69,41 @@
                 Sed massa amet convallis nascetur magnis auctor amet, fermentum,
                 lobortis.
               </p>
+              <button class="read-more-btn">Читать все</button>
             </div>
           </div>
           <div class="bottom-wrapper">
             <div class="about-block text-container">
               <h3 class="about-block__title">Засновниця школи Vixon School</h3>
+              <div class="teacher-card teacher-info-box tablet-hidden-card">
+                <img
+                  class="teacher-card__img"
+                  src="../images/page-about/foundator-img.jpg"
+                  alt="foundator"
+                />
+                <ul class="teacher-card__meta">
+                  <li class="teacher-card__item">
+                    <p class="teacher-card__name teacher-prop">
+                      Саша Александра Окорокова
+                    </p>
+                  </li>
+                  <li class="teacher-card__item">
+                    <a
+                      href="mailto:izzet.talybov@rcproperty.ru"
+                      class="teacher-card__email teacher-prop"
+                      >izzet.talybov@rcproperty.ru</a
+                    >
+                  </li>
+                  <li class="teacher-card__item">
+                    <a
+                      href="tel:+905437828221"
+                      class="teacher-card__phone teacher-prop"
+                      >+905437828221</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
               <p class="about-block__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                 scelerisque ultricies senectus et. Dui elit egestas vitae
@@ -81,12 +113,12 @@
                 Sed massa amet convallis nascetur magnis auctor amet, fermentum,
                 lobortis.
               </p>
-              <p class="about-block__text">
+              <p class="about-block__text mob-hidden-text">
                 Pellentesque eu aliquam, sed sed nibh curabitur tellus. Sed
                 iaculis amet non nec tellus at nunc, nisi, eget. Volutpat erat
                 vel non id pellentesque egestas fusce ac.
               </p>
-              <p class="about-block__text">
+              <p class="about-block__text mob-hidden-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                 scelerisque ultricies senectus et. Dui elit egestas vitae
                 gravida rhoncus ipsum augue augue. Mattis nunc nec nulla
@@ -95,8 +127,9 @@
                 Sed massa amet convallis nascetur magnis auctor amet, fermentum,
                 lobortis.
               </p>
+              <button class="read-more-btn">Читать все</button>
             </div>
-            <div class="teacher-card teacher-info-box">
+            <div class="teacher-card teacher-info-box mob-hidden-card">
               <img
                 class="teacher-card__img"
                 src="../images/page-about/foundator-img.jpg"
@@ -381,114 +414,8 @@
       </section>
 
       <section class="certificate-reviews">
-        <section class="certificate section">
-          <h2 class="subtitle">Сертифікати</h2>
-
-          <div class="container">
-            <ul class="certificate-list">
-              <li class="certificate-item">
-                <img
-                  class="certificate-img"
-                  src="../images/certificate/cert-1.png"
-                  alt="certificate"
-                />
-              </li>
-              <li class="certificate-item">
-                <img
-                  class="certificate-img"
-                  src="../images/certificate/cert-2.png"
-                  alt="certificate"
-                />
-              </li>
-              <li class="certificate-item">
-                <img
-                  class="certificate-img"
-                  src="../images/certificate/cert-1.png"
-                  alt="certificate"
-                />
-              </li>
-              <li class="certificate-item">
-                <img
-                  class="certificate-img"
-                  src="../images/certificate/cert-2.png"
-                  alt="certificate"
-                />
-              </li>
-              <li class="certificate-item">
-                <img
-                  class="certificate-img"
-                  src="../images/certificate/cert-1.png"
-                  alt="certificate"
-                />
-              </li>
-              <li class="certificate-item">
-                <img
-                  class="certificate-img"
-                  src="../images/certificate/cert-2.png"
-                  alt="certificate"
-                />
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="reviews">
-          <h2 class="subtitle">Відгуки</h2>
-          <div class="container">
-            <div class="content">
-              <div class="slider responsive">
-                <div class="review-item">
-                  <div class="reviewer-box">
-                    <img src="../images/review/review1.jpg" alt="" />
-                    <p class="reviewer-name">José Asueta</p>
-                  </div>
-                  <p class="review-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                  <span class="review-date">22.02.22</span>
-                </div>
-                <div class="review-item">
-                  <div class="reviewer-box">
-                    <img src="../images/review/review2.jpg" alt="" />
-                    <p class="reviewer-name">José Asueta</p>
-                  </div>
-                  <p class="review-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                  <span class="review-date">22.02.22</span>
-                </div>
-                <div class="review-item">
-                  <div class="reviewer-box">
-                    <img src="../images/review/review3.jpg" alt="" />
-                    <p class="reviewer-name">José Asueta</p>
-                  </div>
-                  <p class="review-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                  <span class="review-date">22.02.22</span>
-                </div>
-                <div class="review-item">
-                  <div class="reviewer-box">
-                    <img src="../images/review/review2.jpg" alt="" />
-                    <p class="reviewer-name">José Asueta</p>
-                  </div>
-                  <p class="review-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                  <span class="review-date">22.02.22</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <include src="./partials/certificate-section.html"></include>
+        <include src="./partials/reviews-section.html"></include>
       </section>
     </main>
     <include src="./partials/footer.html"></include>

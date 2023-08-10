@@ -4,73 +4,161 @@
 
 .about-section {
   padding-bottom: 96px;
+  background-image: url('../images/page-about/about-us-page-bg1.png'),
+    url('../images/page-about/about-us-page-bg1.png');
+  background-repeat: no-repeat no-repeat;
+  background-position: top -140px left 20px, bottom 195px right -415px;
+}
+
+.title-container {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.page-subtitle {
+  color: #0b221c;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .about-section {
-  &__subtitle {
-    color: #0b221c;
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 32px;
-    margin-bottom: 24px;
-  }
   &__img {
-    margin-right: 32px;
+    max-height: 100%;
+    margin-bottom: 28px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 }
 
 .top-wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
   color: #0b221c;
-  margin-bottom: 77px;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 77px;
+    padding: 16px 0 19px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: stretch;
+  }
 }
+
 .about-block {
-  max-width: 75%;
+  color: #0b221c;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &__title {
-    max-width: 380px;
-    margin-bottom: 27px;
-    font-size: 32px;
-    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      max-width: 380px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: 600;
+      text-align: left;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 28px;
+      font-size: 32px;
+    }
   }
 
   &__text {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 135%;
+    line-height: 120%;
     &:not(:last-child) {
       margin-bottom: 18px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: 1200px) {
+      line-height: 120%;
     }
   }
 }
 
+.mob-hidden-text {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: inline;
+  }
+}
+
+.read-more-btn {
+  border: none;
+  background-color: inherit;
+  color: rgba(107, 188, 96, 1);
+  padding: 12px 8px 12px 0;
+
+  font-size: 14px;
+  :hover,
+  :focus {
+    color: rgb(160, 126, 76);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .text-container {
-  margin-right: 48px;
+  @media screen and (min-width: 768px) {
+    margin-right: 48px;
+  }
 }
 
 .bottom-wrapper {
   display: flex;
-  max-width: 65%;
   margin: 0 auto;
-  color: #0b221c;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 70%;
+  }
 }
 
 .teacher-info-box {
-  padding: 24px;
-  gap: 10px;
+  padding: 12px;
+  height: fit-content;
+  align-self: center;
+  @media screen and (min-width: 768px) {
+    padding: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: auto;
+    align-self: auto;
+  }
 }
 
 .teacher-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
+  gap: 24px;
+
   border-radius: 12px;
   box-shadow: 1px 1px 12px 0px rgba(21, 20, 8, 0.1);
 
   background-color: #f4fff6;
   &__img {
-    width: 238px;
     border-radius: 9px;
     border: 2px solid #afd8aa;
   }
@@ -81,13 +169,17 @@
 
   &__item {
     &:not(:last-child) {
-      margin-bottom: 18px;
+      margin-bottom: 24px;
     }
   }
 
   &__name {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
 
     &::before {
       background-image: url('../images/page-about/person.png');
@@ -116,7 +208,10 @@
 .teacher-prop {
   position: relative;
   color: #0b221c;
-  padding-left: 18px;
+  padding-left: 10px;
+  @media screen and (min-width: 768px) {
+    padding-left: 18px;
+  }
 
   &::before {
     content: ' ';
@@ -129,6 +224,22 @@
     top: 50%;
     left: -10%;
     transform: translateY(-50%);
+  }
+}
+
+.mob-hidden-card {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.tablet-hidden-card {
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -153,6 +264,8 @@
 .teachers-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 32px;
   flex-basis: calc((100% - 96px) / 4);
   &__item {
