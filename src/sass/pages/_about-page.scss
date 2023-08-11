@@ -2,8 +2,20 @@
   padding-top: 24px;
 }
 
+.page-route-name {
+  color: #0b221c;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 135%;
+  margin-bottom: 32px;
+
+  span {
+    color: #6bbc60;
+  }
+}
+
 .about-section {
-  padding-bottom: 96px;
+  padding-bottom: 74px;
   background-image: url('../images/page-about/about-us-page-bg1.png'),
     url('../images/page-about/about-us-page-bg1.png');
   background-repeat: no-repeat no-repeat;
@@ -84,9 +96,6 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 120%;
-    &:not(:last-child) {
-      margin-bottom: 18px;
-    }
     @media screen and (min-width: 768px) {
       font-size: 16px;
     }
@@ -94,6 +103,10 @@
       line-height: 120%;
     }
   }
+}
+
+.about-block__text + .about-block__text {
+  margin-top: 22px;
 }
 
 .mob-hidden-text {
@@ -106,7 +119,7 @@
 .read-more-btn {
   border: none;
   background-color: inherit;
-  color: rgba(107, 188, 96, 1);
+  color: #e8aa31;
   padding: 12px 8px 12px 0;
 
   font-size: 14px;
@@ -269,6 +282,6 @@
   gap: 32px;
   flex-basis: calc((100% - 96px) / 4);
   &__item {
-    max-width: 286px;
+    max-width: 268px;
   }
 }

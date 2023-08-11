@@ -15,20 +15,55 @@
     <include src="./partials/header.html"></include>
 
     <main>
+      <div class="container title-container">
+        <p class="page-route-name"><span>Головна /</span> Контакти</p>
+        <h1 class="page-subtitle">Contacts</h1>
+      </div>
       <section class="about-section">
         <div class="container">
-          <h1 class="page-subtitle">Contacts</h1>
-          <div id="map">
-            <iframe
-              class="map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d259418.77268977568!2d24.408611850417056!3d59.47127401861375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46929499df5616bf%3A0x400b36d18fc6270!2z0KLQsNC70LvQuNC9LCDQrdGB0YLQvtC90LjRjw!5e0!3m2!1sru!2sua!4v1691174412071!5m2!1sru!2sua"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div class="top-wrapper">
+            <div class="map-wrapper">
+              <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d167450.55508792246!2d30.453314894928077!3d50.42376303268382!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1691760057192!5m2!1sru!2sua"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="company-meta-card">
+              <h3 class="about-block__title">Vixon School</h3>
+              <p class="company-meta-card__text">
+                місто Київ, район Дніпровський, вулиця Шевченка 45
+              </p>
+              <div class="company-meta-card__info">
+                <div class="office-hours-block">
+                  <div class="office-hours-block__days">
+                    <p class="office-hours-block__text">Monday - Friday:</p>
+                    <p class="office-hours-block__text">Suturday - Sunday:</p>
+                  </div>
+                  <div class="office-hours-block__time">
+                    <p class="office-hours-block__daytime">9:00 - 20:00</p>
+                    <p class="office-hours-block__daytime">9:00 - 17:30</p>
+                  </div>
+                </div>
+
+                <a
+                  href="mailto:info@rcproperty.ru"
+                  class="company-meta-card__mail-link"
+                  >info@rcproperty.ru</a
+                >
+                <a href="tel:+8(054) 378 282 21" class="company-meta-card__link"
+                  >+8(054) 378 282 21</a
+                >
+                <a href="tel:+8(054) 378 282 21" class="company-meta-card__link"
+                  >+8(054) 378 282 21</a
+                >
+                <a href="tel:+8(054) 378 282 21" class="company-meta-card__link"
+                  >+8(054) 378 282 21</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
