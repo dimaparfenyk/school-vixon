@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -40,18 +40,20 @@ ul {
   padding: 0px;
 }
 
-.section{
+.section {
   width: 100%;
 }
 
-button{
-  cursor: pointer
-  
+button {
+  cursor: pointer;
 }
 
-.main-title{
+textarea {
+  resize: none;
+}
+
+.main-title {
   color: black;
   margin: 40px 0;
   text-align: center;
 }
-

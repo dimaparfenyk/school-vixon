@@ -49,6 +49,10 @@ button {
   cursor: pointer;
 }
 
+textarea {
+  resize: none;
+}
+
 .main-title {
   color: black;
   margin: 40px 0;
@@ -1779,4 +1783,100 @@ ul.slick-dots li.slick-active button:before {
   font-size: 16px;
   font-weight: 600;
   line-height: 150%;
+}
+
+.contacts-form {
+  margin-bottom: 96px;
+}
+
+.contacts-text {
+  color: #0b221c;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+.contacts-text + .contacts-text {
+  margin-top: 22px;
+}
+
+.text-wrapper {
+  margin: 0 auto;
+  padding-bottom: 160px;
+  max-width: 812px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 812px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 64px;
+  border-radius: 8px;
+  border: 1px solid #afd8aa;
+  background-color: #fff;
+}
+.feedback-form__title {
+  margin: 0 auto;
+  color: #0b221c;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.feedback-form__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 14px 17px;
+  border-radius: 8px;
+  border: 1px solid #6bbc60;
+  background: #fff;
+}
+.feedback-form__input[type=number] {
+  grid-column: 2;
+  grid-row: 1;
+}
+.feedback-form__input[type=email] {
+  grid-column: span 2;
+}
+.feedback-form__comments {
+  grid-column: span 2;
+  grid-row: 3;
+  width: 100%;
+  height: 150px;
+  max-width: 100%;
+  padding: 14px 0px 14px 17px;
+  border-radius: 8px;
+  border: 1px solid #6bbc60;
+  background: #fff;
+}
+.feedback-form__btn {
+  width: 100%;
+  max-height: 48px;
+  text-transform: uppercase;
+  color: #0b221c;
+  background-color: #ffb539;
+  border: none;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 72px;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  box-shadow: 7px 7px 6px rgba(98, 90, 20, 0.2509803922);
+}
+
+.form-field {
+  display: grid;
+  gap: 16px 32px;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 32px;
 }/*# sourceMappingURL=main.css.map */
