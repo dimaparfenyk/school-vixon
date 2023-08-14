@@ -1,29 +1,60 @@
+.company-location-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 48px;
+
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 96px;
+  }
+}
+
 .map-wrapper {
   width: 604px;
-  min-height: 430px;
+  height: 430px;
+  max-width: 100%;
+  margin-bottom: 24px;
 
   border-radius: 12px;
   border: 2px solid #afd8aa;
   background: #afd8aa;
   overflow: hidden;
-}
 
-.map {
-  width: 100%;
-  height: 100%;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .company-meta-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #0b221c;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
 
-.company-meta-card__text {
-  margin-bottom: 24px;
+.company-meta-card__adress {
+  text-align: center;
+  margin-bottom: 16px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .company-meta-card__mail-link,
 .company-meta-card__link:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
 }
 
 .company-meta-card__mail-link,
@@ -33,6 +64,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 150%;
+  padding: 8px;
 }
 
 .company-meta-card__mail-link:before {
@@ -64,31 +96,35 @@
 
 .office-hours-block {
   display: flex;
-  margin-bottom: 22px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 22px;
+  }
+
   &__days {
     margin-right: 22px;
   }
 
-  &__text {
-    color: #0b221c;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
-  }
-
-  // &__time {
-  // }
-
+  &__text,
   &__daytime {
     color: #0b221c;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 150%;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
   }
 }
 
 .contacts-form {
-  margin-bottom: 96px;
+  margin-bottom: 48px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 96px;
+  }
 }
 
 .contacts-text {
@@ -105,6 +141,12 @@
 
 .text-wrapper {
   margin: 0 auto;
-  padding-bottom: 160px;
+  padding-bottom: 40px;
   max-width: 812px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 160px;
+  }
 }

@@ -21,21 +21,13 @@
       </div>
       <section class="about-section">
         <div class="container">
-          <div class="top-wrapper">
-            <div class="map-wrapper">
-              <iframe
-                class="map"
-                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d167450.55508792246!2d30.453314894928077!3d50.42376303268382!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1691760057192!5m2!1sru!2sua"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+          <div class="company-location-wrapper">
+            <div class="map-wrapper" id="googleMap"></div>
             <div class="company-meta-card">
               <h3 class="about-block__title">Vixon School</h3>
-              <p class="company-meta-card__text">
+              <adress class="company-meta-card__adress">
                 місто Київ, район Дніпровський, вулиця Шевченка 45
-              </p>
+              </adress>
               <div class="company-meta-card__info">
                 <div class="office-hours-block">
                   <div class="office-hours-block__days">
@@ -47,57 +39,66 @@
                     <p class="office-hours-block__daytime">9:00 - 17:30</p>
                   </div>
                 </div>
-
-                <a
-                  href="mailto:info@rcproperty.ru"
-                  class="company-meta-card__mail-link"
-                  >info@rcproperty.ru</a
-                >
-                <a href="tel:+8(054) 378 282 21" class="company-meta-card__link"
-                  >+8(054) 378 282 21</a
-                >
-                <a href="tel:+8(054) 378 282 21" class="company-meta-card__link"
-                  >+8(054) 378 282 21</a
-                >
-                <a href="tel:+8(054) 378 282 21" class="company-meta-card__link"
-                  >+8(054) 378 282 21</a
-                >
+                <address>
+                  <a
+                    href="mailto:info@rcproperty.ru"
+                    class="company-meta-card__mail-link"
+                    >info@rcproperty.ru</a
+                  >
+                  <a
+                    href="tel:+8(054) 378 282 21"
+                    class="company-meta-card__link"
+                    >+8(054) 378 282 21</a
+                  >
+                  <a
+                    href="tel:+8(054) 378 282 21"
+                    class="company-meta-card__link"
+                    >+8(054) 378 282 21</a
+                  >
+                  <a
+                    href="tel:+8(054) 378 282 21"
+                    class="company-meta-card__link"
+                    >+8(054) 378 282 21</a
+                  >
+                </address>
               </div>
             </div>
           </div>
+
+          <!-- FEEDBACK-FORM -->
+
+          <include src="./partials/feedback-form.html"></include>
+
+          <div class="text-wrapper">
+            <p class="contacts-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              scelerisque ultricies senectus et. Dui elit egestas vitae gravida
+              rhoncus ipsum augue augue. Mattis nunc nec nulla ultricies sed est
+              feugiat consectetur. Habitant amet elit purus vitae ut nec erat
+              sapien. In nunc a ac et vulputate donec sit. Sed massa amet
+              convallis nascetur magnis auctor amet, fermentum, lobortis.
+            </p>
+            <p class="contacts-text">
+              Pellentesque eu aliquam, sed sed nibh curabitur tellus. Sed
+              iaculis amet non nec tellus at nunc, nisi, eget. Volutpat erat vel
+              non id pellentesque egestas fusce ac.
+            </p>
+            <p class="contacts-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              scelerisque ultricies senectus et. Dui elit egestas vitae gravida
+              rhoncus ipsum augue augue. Mattis nunc nec nulla ultricies sed est
+              feugiat consectetur. Habitant amet elit purus vitae ut nec erat
+              sapien. In nunc a ac et vulputate donec sit. Sed massa amet
+              convallis nascetur magnis auctor amet, fermentum, lobortis.
+            </p>
+          </div>
         </div>
       </section>
-      <div class="container">
-        <!-- FEEDBACK-FORM -->
-
-        <include src="./partials/feedback-form.html"></include>
-
-        <div class="text-wrapper">
-          <p class="contacts-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            scelerisque ultricies senectus et. Dui elit egestas vitae gravida
-            rhoncus ipsum augue augue. Mattis nunc nec nulla ultricies sed est
-            feugiat consectetur. Habitant amet elit purus vitae ut nec erat
-            sapien. In nunc a ac et vulputate donec sit. Sed massa amet
-            convallis nascetur magnis auctor amet, fermentum, lobortis.
-          </p>
-          <p class="contacts-text">
-            Pellentesque eu aliquam, sed sed nibh curabitur tellus. Sed iaculis
-            amet non nec tellus at nunc, nisi, eget. Volutpat erat vel non id
-            pellentesque egestas fusce ac.
-          </p>
-          <p class="contacts-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            scelerisque ultricies senectus et. Dui elit egestas vitae gravida
-            rhoncus ipsum augue augue. Mattis nunc nec nulla ultricies sed est
-            feugiat consectetur. Habitant amet elit purus vitae ut nec erat
-            sapien. In nunc a ac et vulputate donec sit. Sed massa amet
-            convallis nascetur magnis auctor amet, fermentum, lobortis.
-          </p>
-        </div>
-      </div>
     </main>
 
     <include src="./partials/footer.html"></include>
+
+    <script src="../js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm-_7lBESQXIEwyhVDWp9uCqZK6nOvU6I&callback=myMap"></script>
   </body>
 </html>
