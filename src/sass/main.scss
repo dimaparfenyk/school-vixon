@@ -1,6 +1,6 @@
 @import './utils/variables';
 @import './utils/reset';
-
+@import '../../node_modules/pikaday/css/pikaday.css';
 @import './components/container';
 @import './components/button';
 
@@ -15,3 +15,4 @@
 @import './pages/about-page';
 @import './pages/contacts-page';
 @import './components/feedback-form';
+@import './pages/teacher-courses-page';
