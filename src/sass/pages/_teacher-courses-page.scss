@@ -1,11 +1,17 @@
 $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
 
 .course-card__title {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+
   color: #0b221c;
-  font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 18px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
 }
 
 .course-cardset {
@@ -13,98 +19,37 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
 }
 
 .course-card {
-  padding: 32px;
+  padding: 48px 16px;
 
   border-radius: 8px;
   border: 1px solid #afd8aa;
   background: #fff;
 
   box-shadow: 0px 0px 39px 0px rgba(23, 91, 22, 0.11);
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 16px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 32px;
+  }
 }
 
 .course-card:not(:last-child) {
   margin-bottom: 64px;
 }
 
-.course-card__wrapper {
-  display: flex;
-  column-gap: 32px;
+.course-card:nth-child(3n + 1) .img-box {
+  background-color: #6bbc60;
 }
 
-.meta-list {
-  margin-bottom: 54px;
+.course-card:nth-child(3n + 2) .img-box {
+  background-color: #ffb539;
 }
 
-.meta-list__text {
-  color: #0b221c;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.meta-list__item {
-  display: flex;
-  flex-direction: row;
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 40px;
-    height: 30px;
-    margin-right: 24px;
-  }
-}
-
-@each $iconName in $icons {
-  .meta-list__item.icon-#{$iconName}::before {
-    background-image: url('../images/teachers-page/#{$iconName}.png');
-  }
-}
-
-.datepicker {
-  display: none;
-}
-// Стили для календаря
-.pika-single {
-  border-radius: 8px;
-  background: #fff;
-
-  box-shadow: 0px 1.3px 12px 4px rgba(11, 19, 94, 0.12);
-}
-
-.description {
-  color: #0b221c;
-}
-
-.description__title {
-  display: flex;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: lowercase;
-  margin-bottom: 20px;
-
-  &::before {
-    content: '';
-    width: 40px;
-    height: 30px;
-    margin-right: 24px;
-    background-image: url('../images/teachers-page/manuscript.png');
-    background-repeat: no-repeat;
-  }
-}
-
-.description__text {
-  display: block;
-
-  width: 360px;
-  padding: 16px;
-
-  border-radius: 8px;
-  border: 1px solid #afd8aa;
-  background-color: #f4fff6;
+.course-card:nth-child(3n + 3) .img-box {
+  background-color: #e0b2c9;
 }
 
 .img-box {
@@ -113,10 +58,14 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 24px 0;
+  height: 100%;
 
-  padding: 32px 0px 43px 0px;
   border-radius: 9px;
-  background-color: #6bbc60;
+
+  @media screen and (min-width: 1200px) {
+    padding: 43px 0;
+  }
 
   &:hover::after,
   &:focus::after {
@@ -154,4 +103,138 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.course-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr;
+    column-gap: 8px;
+    row-gap: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    column-gap: 24px;
+    align-items: flex-start;
+  }
+}
+
+.teacher-courses-card-btn {
+  max-width: 90%;
+}
+
+.meta-list {
+  margin-bottom: 40px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 54px;
+  }
+}
+
+.meta-list__text {
+  color: #0b221c;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.meta-list__item {
+  display: flex;
+  flex-direction: row;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: 20px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 6px;
+    display: inline-block;
+
+    @media screen and (min-width: 375px) {
+      width: 30px;
+      height: 26px;
+      margin-right: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 24px;
+      width: 40px;
+      height: 30px;
+    }
+  }
+}
+
+@each $iconName in $icons {
+  .meta-list__item.icon-#{$iconName}::before {
+    background-image: url('../images/teachers-page/#{$iconName}.png');
+  }
+}
+
+.datepicker {
+  display: none;
+}
+
+// Стили для календаря
+.pika-single {
+  border-radius: 8px;
+  background: #fff;
+
+  box-shadow: 0px 1.3px 12px 4px rgba(11, 19, 94, 0.12);
+}
+
+.description {
+  color: #0b221c;
+}
+
+.description-box {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.description__title {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin-bottom: 20px;
+
+  &::before {
+    content: '';
+    width: 40px;
+    height: 30px;
+    margin-right: 24px;
+    background-image: url('../images/teachers-page/manuscript.png');
+    background-repeat: no-repeat;
+  }
+}
+
+.description__text {
+  display: block;
+
+  width: 360px;
+  padding: 16px;
+
+  border-radius: 8px;
+  border: 1px solid #afd8aa;
+  background-color: #f4fff6;
 }
