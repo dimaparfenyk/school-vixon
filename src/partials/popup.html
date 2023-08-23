@@ -1,0 +1,48 @@
+<div class="backdrop">
+  <div class="modal">
+    <form action="" class="modal__form">
+      <h3 class="modal-title">записатись</h3>
+      <div class="form-content-box">
+        <div class="form-field">
+          <input
+            class="feedback-form__input"
+            type="text"
+            name="text"
+            placeholder="Name"
+          />
+          <input
+            class="feedback-form__input"
+            type="number"
+            name="phone"
+            placeholder="Phone"
+          />
+          <input
+            class="feedback-form__input"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+
+          <textarea
+            class="feedback-form__comments"
+            name="feedback"
+            rows="8"
+            placeholder="Enter your message here..."
+          ></textarea>
+        </div>
+        <div class="modal__btn-container">
+          <button type="submit" class="secondary-btn modal__btn">
+            Оплатити пізніше
+          </button>
+          <button type="submit" class="btn modal__btn">Оплатити LiqPay</button>
+        </div>
+      </div>
+    </form>
+
+    <button data-modal-close="" class="modal__btn-close">
+      <svg class="icon-close" width="28" height="28">
+        <use href="./images/mob-menu/close-icon.svg#close-icon"></use>
+      </svg>
+    </button>
+  </div>
+</div>

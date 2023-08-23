@@ -1,0 +1,38 @@
+// .page-route-name {
+//   color: #0b221c;
+//   font-size: 12px;
+//   font-weight: 600;
+//   line-height: 135%;
+//   margin-bottom: 32px;
+
+//   span {
+//     color: #6bbc60;
+//   }
+// }
+.breadcrumbs {
+  display: flex;
+
+  margin-bottom: 32px;
+}
+
+.breadcrumbs__item .breadcrumbs__link {
+  color: #6bbc60;
+}
+
+.breadcrumbs__item:last-child {
+  color: #0b221c;
+}
+
+.breadcrumbs__item .breadcrumbs__link,
+.breadcrumbs__item:last-child {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 135%;
+  padding: 8px 0;
+}
+
+.breadcrumbs__link::after {
+  content: ' /';
+  display: inline-block;
+  padding: 0 4px;
+}

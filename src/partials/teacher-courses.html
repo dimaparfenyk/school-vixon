@@ -16,9 +16,14 @@
 
     <main>
       <div class="container title-container">
-        <p class="page-route-name">
-          <span>Головна /</span> Тренінги для вчителів
-        </p>
+        <!-- ХЛЕБНЫЕ КРОШКИ -->
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="/" class="breadcrumbs__link">Головна</a>
+          </li>
+          <li class="breadcrumbs__item">Тренінги для вчителів</li>
+        </ul>
+
         <h1 class="page-subtitle">Тренінги для вчителів</h1>
       </div>
       <div class="container">
@@ -270,6 +275,7 @@
 
     <include src="./partials/footer.html"></include>
 
+    <script src="../js/breadcrumbs.js" type="module"></script>
     <script src="../js/teacher-courses.js" type="module"></script>
   </body>
 </html>
