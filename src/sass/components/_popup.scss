@@ -32,7 +32,7 @@
   transform: translate(-50%, -50%);
 
   max-width: 1160px;
-  padding: 60px 48px;
+  padding: 24px;
   border-radius: 8px;
 
   box-shadow: 0px 0px 54px 0px rgba(16, 64, 15, 0.31);
@@ -42,17 +42,26 @@
   //   background-position: top 10% right 0;
   background-color: #f4fff6;
   transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    padding: 60px 48px;
+  }
 }
 
 .modal-title {
   @extend .form-title;
-  margin-bottom: 32px;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .modal__btn-close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 0;
+  right: 0;
   padding: 12px;
   border: none;
 
@@ -61,12 +70,34 @@
   background-color: #0000;
 
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .modal__btn + .modal__btn {
-  margin-left: 32px;
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+  }
 }
 
 .modal__btn-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+
+.icon-close {
+  width: 16px;
+  height: 16px;
+  @media screen and (min-width: 1200px) {
+    width: 32px;
+    height: 32px;
+  }
 }

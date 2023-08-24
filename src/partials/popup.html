@@ -1,4 +1,4 @@
-<div class="backdrop">
+<div class="backdrop is-hidden">
   <div class="modal">
     <form action="" class="modal__form">
       <h3 class="modal-title">записатись</h3>
@@ -31,7 +31,11 @@
           ></textarea>
         </div>
         <div class="modal__btn-container">
-          <button type="submit" class="secondary-btn modal__btn">
+          <button
+            type="button"
+            class="secondary-btn modal__btn"
+            data-modal-close
+          >
             Оплатити пізніше
           </button>
           <button type="submit" class="btn modal__btn">Оплатити LiqPay</button>
@@ -39,7 +43,7 @@
       </div>
     </form>
 
-    <button data-modal-close="" class="modal__btn-close">
+    <button data-modal-close class="modal__btn-close">
       <svg class="icon-close" width="28" height="28">
         <use href="./images/mob-menu/close-icon.svg#close-icon"></use>
       </svg>
