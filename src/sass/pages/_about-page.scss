@@ -73,7 +73,6 @@
     margin-bottom: 20px;
     font-size: 22px;
     font-weight: 700;
-    text-align: center;
     @media screen and (min-width: 768px) {
       max-width: 380px;
       margin-bottom: 20px;
@@ -108,22 +107,6 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: inline;
-  }
-}
-
-.read-more-btn {
-  border: none;
-  background-color: inherit;
-  color: #e8aa31;
-  padding: 12px 8px 12px 0;
-
-  font-size: 14px;
-  :hover,
-  :focus {
-    color: rgb(160, 126, 76);
-  }
-  @media screen and (min-width: 768px) {
-    display: none;
   }
 }
 
@@ -244,8 +227,8 @@
 
 .tablet-hidden-card {
   margin: 0 auto;
-  width: 50%;
   margin-bottom: 24px;
+
   @media screen and (min-width: 768px) {
     display: none;
   }

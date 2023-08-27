@@ -66,7 +66,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: flex-start;
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
@@ -155,6 +155,10 @@
 .text-box {
   display: flex;
   justify-content: space-between;
+}
+
+.text-box:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .work-time {

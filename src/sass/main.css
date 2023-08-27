@@ -157,7 +157,7 @@ textarea {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 995;
+  z-index: 10000;
   padding-top: 9px;
   padding-bottom: 9px;
   background-color: #f4fff6;
@@ -204,6 +204,18 @@ textarea {
   border: none;
 }
 
+.icon-close {
+  fill: #0b221c;
+  opacity: 0.8;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-closeBtn:hover .icon-close,
+.mob-menu-closeBtn:focus .icon-close {
+  fill: #5ca652;
+  opacity: 1;
+}
+
 .mob-menu_list {
   display: flex;
   flex-direction: column;
@@ -212,11 +224,36 @@ textarea {
 }
 
 .mob-menu_item {
-  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scale: 1;
+  transition: scale 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu_item:hover, .mob-menu_item:focus {
+  scale: 1.1;
+}
+
+.mob-menu_item::after {
+  content: ".";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background-color: #0b221c;
+  opacity: 0.8;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu_item:hover::after,
+.mob-menu_item:focus::after {
+  background-color: #5ca652;
+  opacity: 1;
 }
 
 .mob-menu_item:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .mob-menu-link {
@@ -224,10 +261,12 @@ textarea {
   font-size: 18px;
   font-weight: 700;
   color: #0b221c;
-  scale: 1;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mob-menu-link:hover {
-  scale: 1.1;
+
+.mob-menu_item:hover .mob-menu-link,
+.mob-menu_item:focus .mob-menu-link {
+  color: #5ca652;
 }
 
 .nav {
@@ -298,24 +337,6 @@ textarea {
 .nav-item:hover .nav-link::after,
 .nav-item:focus .nav-link::after {
   transform: scaleX(1);
-}
-
-.lang-select {
-  border: none;
-  color: #0b221c;
-  font-size: 16px;
-  font-weight: 500;
-}
-@media screen and (min-width: 768px) {
-  .lang-select {
-    margin-left: 24px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .lang-select {
-    margin-left: 42px;
-    font-size: 16px;
-  }
 }
 
 .phone-box {
@@ -405,6 +426,19 @@ textarea {
   .nav-menu-btn {
     display: none;
   }
+}
+
+.menu {
+  fill: #0b221c;
+  opacity: 0.5;
+  scale: 1;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-menu-btn:hover .menu {
+  fill: #5ca652;
+  opacity: 1;
+  scale: 1.02;
 }
 
 .hero {
@@ -696,9 +730,15 @@ textarea {
 }
 
 .about-img-box > .first {
-  position: absolute;
-  bottom: 24%;
-  right: 20px;
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .about-img-box > .first {
+    position: absolute;
+    display: inline;
+    bottom: 24%;
+    right: 20px;
+  }
 }
 @media screen and (min-width: 768px) {
   .about-img-box > .first {
@@ -713,9 +753,15 @@ textarea {
 }
 
 .about-img-box > .second {
-  position: absolute;
-  bottom: -20px;
-  left: 32%;
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .about-img-box > .second {
+    position: absolute;
+    display: inline;
+    bottom: -20px;
+    left: 32%;
+  }
 }
 @media screen and (min-width: 768px) {
   .about-img-box > .second {
@@ -1173,7 +1219,7 @@ ul.slick-dots li.slick-active button:before {
 .contacts {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: flex-start;
 }
 @media screen and (min-width: 768px) {
   .contacts {
@@ -1282,6 +1328,10 @@ ul.slick-dots li.slick-active button:before {
 .text-box {
   display: flex;
   justify-content: space-between;
+}
+
+.text-box:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .work-time {
@@ -1561,7 +1611,6 @@ ul.slick-dots li.slick-active button:before {
   margin-bottom: 20px;
   font-size: 22px;
   font-weight: 700;
-  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .about-block__title {
@@ -1604,23 +1653,6 @@ ul.slick-dots li.slick-active button:before {
 @media screen and (min-width: 768px) {
   .mob-hidden-text {
     display: inline;
-  }
-}
-
-.read-more-btn {
-  border: none;
-  background-color: inherit;
-  color: #e8aa31;
-  padding: 12px 8px 12px 0;
-  font-size: 14px;
-}
-.read-more-btn :hover,
-.read-more-btn :focus {
-  color: rgb(160, 126, 76);
-}
-@media screen and (min-width: 768px) {
-  .read-more-btn {
-    display: none;
   }
 }
 
@@ -1739,7 +1771,6 @@ ul.slick-dots li.slick-active button:before {
 
 .tablet-hidden-card {
   margin: 0 auto;
-  width: 50%;
   margin-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
