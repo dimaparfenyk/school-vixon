@@ -11,15 +11,18 @@
 }
 
 .title-container {
-  padding-top: 92px;
+  padding-top: 32px;
   margin-bottom: 32px;
 }
 
 .page-subtitle {
   color: #0b221c;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 27px;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 32px;
