@@ -1,22 +1,15 @@
-// .page-route-name {
-//   color: #0b221c;
-//   font-size: 12px;
-//   font-weight: 600;
-//   line-height: 135%;
-//   margin-bottom: 32px;
-
-//   span {
-//     color: #6bbc60;
-//   }
-// }
 .breadcrumbs {
   display: flex;
-
   margin-bottom: 32px;
 }
 
-.breadcrumbs__item .breadcrumbs__link {
+.breadcrumbs__link {
+  display: inline-block;
   color: #6bbc60;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $accentBtnColor;
+  }
 }
 
 .breadcrumbs__item:last-child {

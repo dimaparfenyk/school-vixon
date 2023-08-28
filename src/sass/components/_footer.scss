@@ -58,8 +58,14 @@
   color: $lightTextColor;
   font-size: 12px;
   font-family: Nunito Sans;
+
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
     font-size: 14px;
+  }
+  &:hover,
+  &:focus {
+    color: #6bbc60;
   }
 }
 
@@ -81,6 +87,13 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #6bbc60;
+  }
 }
 
 .footer-contacts > .phone-link {

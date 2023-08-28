@@ -60,21 +60,11 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
   justify-content: center;
   padding: 24px 0;
   height: 100%;
-
+  overflow: hidden;
   border-radius: 9px;
 
   @media screen and (min-width: 1200px) {
     padding: 43px 0;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    opacity: 1;
-  }
-
-  &:hover .img-box__btn,
-  &:focus .img-box__btn {
-    opacity: 1;
   }
 }
 
@@ -89,7 +79,14 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
   border-radius: 9px;
 
   opacity: 0;
-  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  translate: 100%;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-box:hover::after,
+.img-box:focus::after {
+  opacity: 1;
+  translate: 0;
 }
 
 .img-box__btn {
@@ -102,7 +99,12 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
 
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-box:hover .img-box__btn,
+.img-box:focus .img-box__btn {
+  opacity: 1;
 }
 
 .course-card__wrapper {
@@ -141,7 +143,6 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
   color: #0b221c;
   font-size: 14px;
   font-weight: 600;
-  white-space: nowrap;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
