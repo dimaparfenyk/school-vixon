@@ -85,14 +85,14 @@
   padding: 14px 17px;
 
   border-radius: 8px;
-  border: 1px solid #6bbc60;
+  border: 2px solid #6bbc60;
   background: #fff;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus,
   &:focus-visible {
-    border: 1px solid #ffb539;
+    border: 2px solid #ffb539;
   }
 }
 

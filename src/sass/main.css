@@ -168,6 +168,14 @@ textarea {
   background-color: #f4fff6;
 }
 
+.logo {
+  scale: 1;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo:hover, .logo:focus {
+  scale: 1.03;
+}
+
 .header > .container {
   display: flex;
   align-items: center;
@@ -653,7 +661,6 @@ textarea {
   padding-bottom: 80px;
   background-image: url("../images/about/about-bg.png");
   background-repeat: no-repeat;
-  background-position: top 0 right 0, top right;
 }
 @media screen and (min-width: 1200px) {
   .about {
@@ -858,7 +865,6 @@ textarea {
   position: relative;
   background-image: url("../images/certificate/certificate-bg.png");
   background-repeat: no-repeat;
-  background-position: top -135px right -60px, top right;
 }
 
 .certificate {
@@ -879,41 +885,21 @@ textarea {
   text-align: center;
 }
 
-.certificate-list {
+.gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 32px;
 }
 @media screen and (min-width: 768px) {
-  .certificate-list {
+  .gallery {
     gap: 20px 28px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .certificate-list {
+  .gallery {
     gap: 12px 28px;
   }
-}
-
-.certificate-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .certificate-item {
-    flex-basis: calc((100% - 28px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .certificate-item {
-    flex-basis: calc((100% - 56px) / 3);
-  }
-}
-
-.certificate-img {
-  width: 100%;
 }
 
 .reviews {
@@ -1532,6 +1518,12 @@ ul.slick-dots li.slick-active button:before {
   }
 }
 
+.main {
+  background-image: url("../images/courses-card/course-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .about-us-section > .container {
   padding-top: 24px;
 }
@@ -1540,7 +1532,6 @@ ul.slick-dots li.slick-active button:before {
   padding-bottom: 74px;
   background-image: url("../images/page-about/about-us-page-bg1.png"), url("../images/page-about/about-us-page-bg1.png");
   background-repeat: no-repeat no-repeat;
-  background-position: top -140px left 20px, bottom 195px right -415px;
 }
 
 .title-container {
@@ -1671,6 +1662,11 @@ ul.slick-dots li.slick-active button:before {
   .bottom-wrapper {
     max-width: 70%;
   }
+}
+
+.teachers-team {
+  background-image: url("../images/page-about/bg-3.png");
+  background-repeat: no-repeat;
 }
 
 .teacher-info-box {
@@ -2056,12 +2052,12 @@ ul.slick-dots li.slick-active button:before {
   height: 40px;
   padding: 14px 17px;
   border-radius: 8px;
-  border: 1px solid #6bbc60;
+  border: 2px solid #6bbc60;
   background: #fff;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .feedback-form__input:hover, .feedback-form__input:focus, .feedback-form__input:focus-visible {
-  border: 1px solid #ffb539;
+  border: 2px solid #ffb539;
 }
 
 .form-title, .modal-title {

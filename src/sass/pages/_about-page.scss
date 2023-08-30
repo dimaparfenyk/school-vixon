@@ -1,3 +1,9 @@
+.main {
+  background-image: url('../images/courses-card/course-bg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .about-us-section > .container {
   padding-top: 24px;
 }
@@ -7,7 +13,7 @@
   background-image: url('../images/page-about/about-us-page-bg1.png'),
     url('../images/page-about/about-us-page-bg1.png');
   background-repeat: no-repeat no-repeat;
-  background-position: top -140px left 20px, bottom 195px right -415px;
+  // background-position: top -140px left 20px, bottom 195px right -415px;
 }
 
 .title-container {
@@ -123,6 +129,11 @@
   @media screen and (min-width: 1200px) {
     max-width: 70%;
   }
+}
+
+.teachers-team {
+  background-image: url('../images/page-about/bg-3.png');
+  background-repeat: no-repeat;
 }
 
 .teacher-info-box {
