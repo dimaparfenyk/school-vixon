@@ -1,0 +1,82 @@
+.course-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+
+  border-radius: 9px;
+  background-color: #6bbc60;
+
+  @media screen and (min-width: 1200px) {
+    padding: 43px 0;
+  }
+}
+.description-item {
+  cursor: pointer;
+}
+
+.description-item + .description-item {
+  margin-top: 20px;
+}
+
+$icons: 'diploma', 'teacher', 'manuscript';
+@each $iconName in $icons {
+  .descr.icon-#{$iconName}::before {
+    background-image: url('../images/teachers-page/#{$iconName}.png');
+  }
+}
+
+.descr {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin-bottom: 20px;
+  color: #0b221c;
+
+  &::before {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background-image: url('../images/teachers-page/manuscript.png');
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: '';
+    margin-left: auto;
+    padding-left: 6px;
+    width: 40px;
+    height: 30px;
+    background-image: url('../images/questions/arrow-bottom.png');
+    background-repeat: no-repeat;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.descr__text {
+  max-height: 0;
+  padding: 0;
+  opacity: 0;
+  border: 0px solid transparent;
+  overflow: hidden;
+  background-color: transparent;
+  color: transparent;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.js-descr > .descr__text {
+  display: block;
+  max-height: 200px;
+  padding: 16px;
+  opacity: 1;
+
+  border-radius: 8px;
+  border: 1px solid #afd8aa;
+  background-color: #f4fff6;
+  color: #0b221c;
+}
+
+.js-descr > .descr::after {
+  background-image: url('../images/questions/arrow-top.png');
+}

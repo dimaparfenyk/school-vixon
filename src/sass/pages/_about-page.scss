@@ -1,9 +1,3 @@
-.main {
-  background-image: url('../images/courses-card/course-bg.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .about-us-section > .container {
   padding-top: 24px;
 }
@@ -12,13 +6,7 @@
   padding-bottom: 74px;
   background-image: url('../images/page-about/about-us-page-bg1.png'),
     url('../images/page-about/about-us-page-bg1.png');
-  background-repeat: no-repeat no-repeat;
-  // background-position: top -140px left 20px, bottom 195px right -415px;
-}
-
-.title-container {
-  padding-top: 32px;
-  margin-bottom: 32px;
+  background-repeat: no-repeat;
 }
 
 .page-subtitle {
@@ -26,12 +14,15 @@
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     font-size: 27px;
+    margin-bottom: 24px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 32px;
+    margin-bottom: 32px;
   }
 }
 

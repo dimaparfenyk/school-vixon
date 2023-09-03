@@ -1,5 +1,7 @@
 @import './utils/variables';
 @import './utils/reset';
+@import './utils/_mixin';
+
 @import '../../node_modules/pikaday/css/pikaday.css';
 @import './components/container';
 @import './components/button';
@@ -19,3 +21,4 @@
 @import './pages/teacher-courses-page';
 @import './components/popup';
 @import './pages/questions';
+@import './pages/current-children-course';

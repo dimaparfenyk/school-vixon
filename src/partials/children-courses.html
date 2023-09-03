@@ -14,8 +14,8 @@
   <body>
     <include src="./partials/header.html"></include>
 
-    <main class="main">
-      <div class="container title-container">
+    <main>
+      <div class="container base-container">
         <!-- ХЛЕБНЫЕ КРОШКИ -->
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item">
@@ -24,377 +24,280 @@
           <li class="breadcrumbs__item">Категория курсов</li>
         </ul>
         <h1 class="page-subtitle">Курсы от 5-9 лет</h1>
-      </div>
-      <div class="container children-courses-container">
-        <ul class="children-courses-card-list">
-          <li class="children-courses-card">
-            <img src="../images/courses-card/1.png" alt="course" />
+
+        <ul class="children-courses-cardset">
+          <li class="children-courses-card" id="course1">
+            <img
+              src="../images/courses-card/1.png"
+              alt="course"
+              data-action="open"
+            />
             <div class="course-card-info">
               <div class="course-subinfo">
-                <img src="../images/courses-card/start.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">старт</p>
-                  <p class="course-card-text">17.09.22</p>
-                </div>
-                <img src="../images/courses-card/group.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">группа</p>
-                  <p class="course-card-text">до 7 чел</p>
-                </div>
-                <img src="../images/courses-card/time.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">время</p>
-                  <p class="course-card-text">4 мес</p>
-                </div>
-                <img src="../images/courses-card/price.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">цена</p>
-                  <p class="course-card-text">6000 грн</p>
-                </div>
+                <p class="course-card-text" data-start>старт 17.09.22</p>
+                <p class="course-card-text" data-group>группа до 7 чел</p>
+                <p class="course-card-text" data-time>время 4 мес</p>
+                <p class="course-card-text" data-price>цена 6000 грн</p>
               </div>
-              <h3 class="course-name">
-                Исследуем солнечную систему через измерения
+              <h3 class="course-name" data-action="open">
+                <a
+                  class="course-link"
+                  href="/src/partials/current-children-course.html"
+                  >Исследуем солнечную систему через измерения</a
+                >
+              </h3>
+            </div>
+          </li>
+
+          <li class="children-courses-card" id="course2">
+            <img
+              src="../images/courses-card/2.png"
+              alt="course"
+              data-action="open"
+            />
+            <div class="course-card-info">
+              <div class="course-subinfo">
+                <p class="course-card-text" data-start>старт 17.09.22</p>
+                <p class="course-card-text" data-group>группа до 7 чел</p>
+                <p class="course-card-text" data-time>время 4 мес</p>
+                <p class="course-card-text" data-price>цена 6000 грн</p>
+              </div>
+              <h3 class="course-name" data-action="open">
+                <a
+                  class="course-link"
+                  href="/src/partials/current-children-course.html"
+                  >Исследуем солнечную систему через измерения</a
+                >
               </h3>
             </div>
           </li>
 
           <li class="children-courses-card">
-            <img src="../images/courses-card/2.png" alt="course" />
+            <img
+              src="../images/courses-card/3.png"
+              alt="course"
+              data-action="open"
+            />
             <div class="course-card-info">
               <div class="course-subinfo">
-                <img src="../images/courses-card/start.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">старт</p>
-                  <p class="course-card-text">17.09.22</p>
-                </div>
-                <img src="../images/courses-card/group.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">група</p>
-                  <p class="course-card-text">до 7 чел</p>
-                </div>
-                <img src="../images/courses-card/time.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">час</p>
-                  <p class="course-card-text">4 міс</p>
-                </div>
-                <img src="../images/courses-card/price.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">ціна</p>
-                  <p class="course-card-text">6000 грн</p>
-                </div>
+                <p class="course-card-text" data-start>старт 17.09.22</p>
+                <p class="course-card-text" data-group>группа до 7 чел</p>
+                <p class="course-card-text" data-time>время 4 мес</p>
+                <p class="course-card-text" data-price>цена 6000 грн</p>
               </div>
-              <h3 class="course-name">
-                Досліджуємо сонячну систему через вимірювання
+              <h3 class="course-name" data-action="open">
+                <a
+                  class="course-link"
+                  href="/src/partials/current-children-course.html"
+                  >Исследуем солнечную систему через измерения</a
+                >
               </h3>
             </div>
           </li>
 
           <li class="children-courses-card">
-            <img src="../images/courses-card/3.png" alt="course" />
+            <img
+              src="../images/courses-card/1.png"
+              alt="course"
+              data-action="open"
+            />
             <div class="course-card-info">
               <div class="course-subinfo">
-                <img src="../images/courses-card/start.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">старт</p>
-                  <p class="course-card-text">17.09.22</p>
-                </div>
-                <img src="../images/courses-card/group.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">група</p>
-                  <p class="course-card-text">до 7 осіб</p>
-                </div>
-                <img src="../images/courses-card/time.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">час</p>
-                  <p class="course-card-text">4 міс</p>
-                </div>
-                <img src="../images/courses-card/price.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">ціна</p>
-                  <p class="course-card-text">6000 грн</p>
-                </div>
+                <p class="course-card-text" data-start>старт 17.09.22</p>
+                <p class="course-card-text" data-group>группа до 7 чел</p>
+                <p class="course-card-text" data-time>время 4 мес</p>
+                <p class="course-card-text" data-price>цена 6000 грн</p>
               </div>
-              <h3 class="course-name">
-                Досліджуємо сонячну систему через вимірювання
+              <h3 class="course-name" data-action="open">
+                <a
+                  class="course-link"
+                  href="/src/partials/current-children-course.html"
+                  >Исследуем солнечную систему через измерения</a
+                >
               </h3>
             </div>
           </li>
 
           <li class="children-courses-card">
-            <img src="../images/courses-card/1.png" alt="course" />
+            <img
+              src="../images/courses-card/2.png"
+              alt="course"
+              data-action="open"
+            />
             <div class="course-card-info">
               <div class="course-subinfo">
-                <img src="../images/courses-card/start.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">старт</p>
-                  <p class="course-card-text">17.09.22</p>
-                </div>
-                <img src="../images/courses-card/group.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">група</p>
-                  <p class="course-card-text">до 7 осіб</p>
-                </div>
-                <img src="../images/courses-card/time.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">час</p>
-                  <p class="course-card-text">4 міс</p>
-                </div>
-                <img src="../images/courses-card/price.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">ціна</p>
-                  <p class="course-card-text">6000 грн</p>
-                </div>
+                <p class="course-card-text" data-start>старт 17.09.22</p>
+                <p class="course-card-text" data-group>группа до 7 чел</p>
+                <p class="course-card-text" data-time>время 4 мес</p>
+                <p class="course-card-text" data-price>цена 6000 грн</p>
               </div>
-              <h3 class="course-name">
-                Досліджуємо сонячну систему через вимірювання
+              <h3 class="course-name" data-action="open">
+                <a
+                  class="course-link"
+                  href="/src/partials/current-children-course.html"
+                  >Исследуем солнечную систему через измерения</a
+                >
               </h3>
             </div>
           </li>
 
           <li class="children-courses-card">
-            <img src="../images/courses-card/2.png" alt="course" />
+            <img
+              src="../images/courses-card/3.png"
+              alt="course"
+              data-action="open"
+            />
             <div class="course-card-info">
               <div class="course-subinfo">
-                <img src="../images/courses-card/start.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">старт</p>
-                  <p class="course-card-text">17.09.22</p>
-                </div>
-                <img src="../images/courses-card/group.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">група</p>
-                  <p class="course-card-text">до 7 осіб</p>
-                </div>
-                <img src="../images/courses-card/time.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">час</p>
-                  <p class="course-card-text">4 міс</p>
-                </div>
-                <img src="../images/courses-card/price.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">ціна</p>
-                  <p class="course-card-text">6000 грн</p>
-                </div>
+                <p class="course-card-text" data-start>старт 17.09.22</p>
+                <p class="course-card-text" data-group>группа до 7 чел</p>
+                <p class="course-card-text" data-time>время 4 мес</p>
+                <p class="course-card-text" data-price>цена 6000 грн</p>
               </div>
-              <h3 class="course-name">
-                Досліджуємо сонячну систему через вимірювання
+              <h3 class="course-name" data-action="open">
+                <a
+                  class="course-link"
+                  href="/src/partials/current-children-course.html"
+                  >Исследуем солнечную систему через измерения</a
+                >
               </h3>
             </div>
           </li>
 
           <li class="children-courses-card">
-            <img src="../images/courses-card/3.png" alt="course" />
+            <img
+              src="../images/courses-card/1.png"
+              alt="course"
+              data-action="open"
+            />
             <div class="course-card-info">
               <div class="course-subinfo">
-                <img src="../images/courses-card/start.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">старт</p>
-                  <p class="course-card-text">17.09.22</p>
-                </div>
-                <img src="../images/courses-card/group.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">група</p>
-                  <p class="course-card-text">до 7 осіб</p>
-                </div>
-                <img src="../images/courses-card/time.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">час</p>
-                  <p class="course-card-text">4 міс</p>
-                </div>
-                <img src="../images/courses-card/price.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">ціна</p>
-                  <p class="course-card-text">6000 грн</p>
-                </div>
+                <p class="course-card-text" data-start>старт 17.09.22</p>
+                <p class="course-card-text" data-group>группа до 7 чел</p>
+                <p class="course-card-text" data-time>время 4 мес</p>
+                <p class="course-card-text" data-price>цена 6000 грн</p>
               </div>
-              <h3 class="course-name">
-                Досліджуємо сонячну систему через вимірювання
+              <h3 class="course-name" data-action="open">
+                <a
+                  class="course-link"
+                  href="/src/partials/current-children-course.html"
+                  >Исследуем солнечную систему через измерения</a
+                >
               </h3>
             </div>
           </li>
 
           <li class="children-courses-card">
-            <img src="../images/courses-card/1.png" alt="course" />
+            <img
+              src="../images/courses-card/2.png"
+              alt="course"
+              data-action="open"
+            />
             <div class="course-card-info">
               <div class="course-subinfo">
-                <img src="../images/courses-card/start.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">старт</p>
-                  <p class="course-card-text">17.09.22</p>
-                </div>
-                <img src="../images/courses-card/group.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">група</p>
-                  <p class="course-card-text">до 7 осіб</p>
-                </div>
-                <img src="../images/courses-card/time.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">час</p>
-                  <p class="course-card-text">4 міс</p>
-                </div>
-                <img src="../images/courses-card/price.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">ціна</p>
-                  <p class="course-card-text">6000 грн</p>
-                </div>
+                <p class="course-card-text" data-start>старт 17.09.22</p>
+                <p class="course-card-text" data-group>группа до 7 чел</p>
+                <p class="course-card-text" data-time>время 4 мес</p>
+                <p class="course-card-text" data-price>цена 6000 грн</p>
               </div>
-              <h3 class="course-name">
-                Досліджуємо сонячну систему через вимірювання
+              <h3 class="course-name" data-action="open">
+                <a
+                  class="course-link"
+                  href="/src/partials/current-children-course.html"
+                  >Исследуем солнечную систему через измерения</a
+                >
               </h3>
             </div>
           </li>
 
           <li class="children-courses-card">
-            <img src="../images/courses-card/2.png" alt="course" />
+            <img
+              src="../images/courses-card/3.png"
+              alt="course"
+              data-action="open"
+            />
             <div class="course-card-info">
               <div class="course-subinfo">
-                <img src="../images/courses-card/start.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">старт</p>
-                  <p class="course-card-text">17.09.22</p>
-                </div>
-                <img src="../images/courses-card/group.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">група</p>
-                  <p class="course-card-text">до 7 осіб</p>
-                </div>
-                <img src="../images/courses-card/time.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">час</p>
-                  <p class="course-card-text">4 міс</p>
-                </div>
-                <img src="../images/courses-card/price.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">ціна</p>
-                  <p class="course-card-text">6000 грн</p>
-                </div>
+                <p class="course-card-text" data-start>старт 17.09.22</p>
+                <p class="course-card-text" data-group>группа до 7 чел</p>
+                <p class="course-card-text" data-time>время 4 мес</p>
+                <p class="course-card-text" data-price>цена 6000 грн</p>
               </div>
-              <h3 class="course-name">
-                Досліджуємо сонячну систему через вимірювання
+              <h3 class="course-name" data-action="open">
+                <a
+                  class="course-link"
+                  href="/src/partials/current-children-course.html"
+                  >Исследуем солнечную систему через измерения</a
+                >
               </h3>
             </div>
           </li>
 
           <li class="children-courses-card">
-            <img src="../images/courses-card/3.png" alt="course" />
+            <img
+              src="../images/courses-card/1.png"
+              alt="course"
+              data-action="open"
+            />
             <div class="course-card-info">
               <div class="course-subinfo">
-                <img src="../images/courses-card/start.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">старт</p>
-                  <p class="course-card-text">17.09.22</p>
-                </div>
-                <img src="../images/courses-card/group.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">група</p>
-                  <p class="course-card-text">до 7 осіб</p>
-                </div>
-                <img src="../images/courses-card/time.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">час</p>
-                  <p class="course-card-text">4 міс</p>
-                </div>
-                <img src="../images/courses-card/price.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">ціна</p>
-                  <p class="course-card-text">6000 грн</p>
-                </div>
+                <p class="course-card-text" data-start>старт 17.09.22</p>
+                <p class="course-card-text" data-group>группа до 7 чел</p>
+                <p class="course-card-text" data-time>время 4 мес</p>
+                <p class="course-card-text" data-price>цена 6000 грн</p>
               </div>
-              <h3 class="course-name">
-                Досліджуємо сонячну систему через вимірювання
+              <h3 class="course-name" data-action="open">
+                <a
+                  class="course-link"
+                  href="/src/partials/current-children-course.html"
+                  >Исследуем солнечную систему через измерения</a
+                >
               </h3>
             </div>
           </li>
 
           <li class="children-courses-card">
-            <img src="../images/courses-card/1.png" alt="course" />
+            <img
+              src="../images/courses-card/2.png"
+              alt="course"
+              data-action="open"
+            />
             <div class="course-card-info">
               <div class="course-subinfo">
-                <img src="../images/courses-card/start.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">старт</p>
-                  <p class="course-card-text">17.09.22</p>
-                </div>
-                <img src="../images/courses-card/group.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">група</p>
-                  <p class="course-card-text">до 7 осіб</p>
-                </div>
-                <img src="../images/courses-card/time.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">час</p>
-                  <p class="course-card-text">4 міс</p>
-                </div>
-                <img src="../images/courses-card/price.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">ціна</p>
-                  <p class="course-card-text">6000 грн</p>
-                </div>
+                <p class="course-card-text" data-start>старт 17.09.22</p>
+                <p class="course-card-text" data-group>группа до 7 чел</p>
+                <p class="course-card-text" data-time>время 4 мес</p>
+                <p class="course-card-text" data-price>цена 6000 грн</p>
               </div>
-              <h3 class="course-name">
-                Досліджуємо сонячну систему через вимірювання
+              <h3 class="course-name" data-action="open">
+                <a
+                  class="course-link"
+                  href="/src/partials/current-children-course.html"
+                  >Исследуем солнечную систему через измерения</a
+                >
               </h3>
             </div>
           </li>
 
           <li class="children-courses-card">
-            <img src="../images/courses-card/2.png" alt="course" />
+            <img
+              src="../images/courses-card/3.png"
+              alt="course"
+              data-action="open"
+            />
             <div class="course-card-info">
               <div class="course-subinfo">
-                <img src="../images/courses-card/start.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">старт</p>
-                  <p class="course-card-text">17.09.22</p>
-                </div>
-                <img src="../images/courses-card/group.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">група</p>
-                  <p class="course-card-text">до 7 осіб</p>
-                </div>
-                <img src="../images/courses-card/time.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">час</p>
-                  <p class="course-card-text">4 міс</p>
-                </div>
-                <img src="../images/courses-card/price.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">ціна</p>
-                  <p class="course-card-text">6000 грн</p>
-                </div>
+                <p class="course-card-text" data-start>старт 17.09.22</p>
+                <p class="course-card-text" data-group>группа до 7 чел</p>
+                <p class="course-card-text" data-time>время 4 мес</p>
+                <p class="course-card-text" data-price>цена 6000 грн</p>
               </div>
-              <h3 class="course-name">
-                Досліджуємо сонячну систему через вимірювання
-              </h3>
-            </div>
-          </li>
-
-          <li class="children-courses-card">
-            <img src="../images/courses-card/3.png" alt="course" />
-            <div class="course-card-info">
-              <div class="course-subinfo">
-                <img src="../images/courses-card/start.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">старт</p>
-                  <p class="course-card-text">17.09.22</p>
-                </div>
-                <img src="../images/courses-card/group.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">група</p>
-                  <p class="course-card-text">до 7 осіб</p>
-                </div>
-                <img src="../images/courses-card/time.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">час</p>
-                  <p class="course-card-text">4 міс</p>
-                </div>
-                <img src="../images/courses-card/price.svg" alt="start" />
-                <div class="course-card-text-box">
-                  <p class="course-card-text">ціна</p>
-                  <p class="course-card-text">6000 грн</p>
-                </div>
-              </div>
-              <h3 class="course-name">
-                Досліджуємо сонячну систему через вимірювання
+              <h3 class="course-name" data-action="open">
+                <a
+                  class="course-link"
+                  href="/src/partials/current-children-course.html"
+                  >Исследуем солнечную систему через измерения</a
+                >
               </h3>
             </div>
           </li>

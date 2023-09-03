@@ -1,5 +1,4 @@
 const accordion = document.querySelector('.accordion');
-const spoller = document.querySelectorAll('.accordion__text-container');
 
 accordion.addEventListener('click', toggleClassName);
 

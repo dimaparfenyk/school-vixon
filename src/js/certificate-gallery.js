@@ -4,7 +4,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 const header = document.querySelector('.header');
 
 var lightbox = new SimpleLightbox('.gallery a', {
-  overlayOpacity: 1,
+  overlayOpacity: 0.8,
   maxZoom: 2,
   animationSpeed: 300,
 });

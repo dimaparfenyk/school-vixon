@@ -1,4 +1,4 @@
-$icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
+$icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
 
 .course-card__title {
   margin-bottom: 16px;
@@ -40,18 +40,6 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
   margin-bottom: 64px;
 }
 
-.course-card:nth-child(3n + 1) .img-box {
-  background-color: #6bbc60;
-}
-
-.course-card:nth-child(3n + 2) .img-box {
-  background-color: #ffb539;
-}
-
-.course-card:nth-child(3n + 3) .img-box {
-  background-color: #e0b2c9;
-}
-
 .img-box {
   position: relative;
 
@@ -62,10 +50,19 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
   height: 100%;
   overflow: hidden;
   border-radius: 9px;
+  background-color: #6bbc60;
 
   @media screen and (min-width: 1200px) {
     padding: 43px 0;
   }
+}
+
+.course-card:nth-child(3n + 2) .img-box {
+  background-color: #ffb539;
+}
+
+.course-card:nth-child(3n + 3) .img-box {
+  background-color: #e0b2c9;
 }
 
 .img-box::after {
@@ -140,12 +137,33 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
 }
 
 .meta-list__text {
+  display: flex;
+  align-items: center;
   color: #0b221c;
   font-size: 14px;
   font-weight: 600;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
+  }
+
+  &::before {
+    content: '';
+    width: 20px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 24px;
+
+    @media screen and (min-width: 375px) {
+      width: 30px;
+      height: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 40px;
+      height: 30px;
+    }
   }
 }
 
@@ -159,36 +177,33 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
       margin-bottom: 20px;
     }
   }
-
-  &::before {
-    content: '';
-    width: 20px;
-    height: 16px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-right: 6px;
-    display: inline-block;
-
-    @media screen and (min-width: 375px) {
-      width: 30px;
-      height: 26px;
-      margin-right: 16px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      margin-right: 24px;
-      width: 40px;
-      height: 30px;
-    }
-  }
 }
 
 @each $iconName in $icons {
-  .meta-list__item.icon-#{$iconName}::before {
+  .meta-list__text.icon-#{$iconName}::before {
     background-image: url('../images/teachers-page/#{$iconName}.png');
   }
 }
 
+.icon-calendar::before {
+  content: '';
+  background-image: url('../images/teachers-page/calendar.png');
+  width: 20px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-right: 24px;
+
+  @media screen and (min-width: 375px) {
+    width: 30px;
+    height: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 40px;
+    height: 30px;
+  }
+}
 .datepicker {
   display: none;
 }
@@ -199,10 +214,6 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
   background: #fff;
 
   box-shadow: 0px 1.3px 12px 4px rgba(11, 19, 94, 0.12);
-}
-
-.description {
-  color: #0b221c;
 }
 
 .description-box {
@@ -218,12 +229,12 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
   font-weight: 600;
   text-transform: lowercase;
   margin-bottom: 20px;
+  color: #0b221c;
 
   &::before {
     content: '';
     width: 40px;
     height: 30px;
-    margin-right: 24px;
     background-image: url('../images/teachers-page/manuscript.png');
     background-repeat: no-repeat;
   }
@@ -238,4 +249,5 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'calendar';
   border-radius: 8px;
   border: 1px solid #afd8aa;
   background-color: #f4fff6;
+  color: #0b221c;
 }
