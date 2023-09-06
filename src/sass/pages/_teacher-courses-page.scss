@@ -14,10 +14,6 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
   }
 }
 
-.course-cardset {
-  margin-bottom: 64px;
-}
-
 .course-card {
   padding: 48px 16px;
 
@@ -28,7 +24,7 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
   box-shadow: 0px 0px 39px 0px rgba(23, 91, 22, 0.11);
 
   @media screen and (min-width: 768px) {
-    padding: 32px 16px 0;
+    padding: 32px 16px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -36,8 +32,8 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
   }
 }
 
-.course-card:not(:last-child) {
-  margin-bottom: 64px;
+.course-card + .course-card {
+  margin-top: 64px;
 }
 
 .img-box {
@@ -47,7 +43,6 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
   align-items: center;
   justify-content: center;
   padding: 24px 0;
-  height: 100%;
   overflow: hidden;
   border-radius: 9px;
   background-color: #6bbc60;
@@ -107,33 +102,35 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
 .course-card__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  row-gap: 32px;
-
+  gap: 60px;
   @media screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2fr 1fr;
-    column-gap: 8px;
-    row-gap: 16px;
+    gap: 32px;
   }
   @media screen and (min-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: none;
-    column-gap: 24px;
-    align-items: flex-start;
+    flex-direction: row;
   }
 }
 
-.teacher-courses-card-btn {
-  max-width: 90%;
+.top-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
+}
+
+.meta-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .meta-list {
-  margin-bottom: 40px;
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 54px;
-  }
+  margin-bottom: 32px;
 }
 
 .meta-list__text {
@@ -153,16 +150,21 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
     height: 16px;
     background-repeat: no-repeat;
     background-size: contain;
-    padding-right: 24px;
+    padding-right: 12px;
 
     @media screen and (min-width: 375px) {
       width: 30px;
       height: 26px;
     }
 
+    @media screen and (min-width: 768px) {
+      padding-right: 18px;
+    }
+
     @media screen and (min-width: 1200px) {
       width: 40px;
       height: 30px;
+      padding-right: 24px;
     }
   }
 }
@@ -186,29 +188,35 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
 }
 
 .icon-calendar::before {
-  content: '';
-  background-image: url('../images/teachers-page/calendar.png');
-  width: 20px;
-  height: 16px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-right: 24px;
-
   @media screen and (min-width: 375px) {
+    content: '';
     width: 30px;
     height: 26px;
+
+    background-image: url('../images/teachers-page/calendar.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 30px;
+    height: 26px;
+    padding-right: 18px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 40px;
     height: 30px;
+    padding-right: 24px;
   }
-}
-.datepicker {
-  display: none;
 }
 
 // Стили для календаря
+
+.datepicker {
+  display: none;
+}
 .pika-single {
   border-radius: 8px;
   background: #fff;
@@ -217,14 +225,18 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
 }
 
 .description-box {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media screen and (min-width: 768px) {
-    display: block;
+    align-items: flex-start;
   }
 }
 
 .description__title {
   display: flex;
+
   font-size: 16px;
   font-weight: 600;
   text-transform: lowercase;
@@ -243,11 +255,19 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
 .description__text {
   display: block;
 
-  width: 360px;
+  max-width: 360px;
   padding: 16px;
 
   border-radius: 8px;
   border: 1px solid #afd8aa;
   background-color: #f4fff6;
   color: #0b221c;
+}
+
+.teacher-courses-card-btn {
+  min-width: 90%;
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    min-width: 70%;
+  }
 }

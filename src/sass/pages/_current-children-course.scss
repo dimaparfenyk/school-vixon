@@ -1,3 +1,10 @@
+.course-article {
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 88px;
+  }
+}
+
 .course-img-box {
   display: flex;
   align-items: center;
@@ -7,10 +14,26 @@
   border-radius: 9px;
   background-color: #6bbc60;
 
+  @media screen and (min-width: 768px) {
+    min-width: 320px;
+  }
+
   @media screen and (min-width: 1200px) {
     padding: 43px 0;
+    min-width: 392px;
   }
 }
+
+.descr-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+  }
+}
+
 .description-item {
   cursor: pointer;
 }
@@ -19,7 +42,7 @@
   margin-top: 20px;
 }
 
-$icons: 'diploma', 'teacher', 'manuscript';
+$icons: 'diploma', 'teacher', 'manuscript', 'content';
 @each $iconName in $icons {
   .descr.icon-#{$iconName}::before {
     background-image: url('../images/teachers-page/#{$iconName}.png');
@@ -27,15 +50,20 @@ $icons: 'diploma', 'teacher', 'manuscript';
 }
 
 .descr {
-  display: flex;
+  position: relative;
   font-size: 16px;
   font-weight: 600;
   text-transform: lowercase;
   margin-bottom: 20px;
+  padding: 0 40px;
   color: #0b221c;
 
   &::before {
     content: '';
+    display: inline-block;
+    position: absolute;
+    left: -4px;
+    top: 0;
     width: 40px;
     height: 30px;
     background-image: url('../images/teachers-page/manuscript.png');
@@ -44,14 +72,76 @@ $icons: 'diploma', 'teacher', 'manuscript';
 
   &::after {
     content: '';
-    margin-left: auto;
-    padding-left: 6px;
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    top: 0;
     width: 40px;
     height: 30px;
     background-image: url('../images/questions/arrow-bottom.png');
     background-repeat: no-repeat;
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+
+.cur-course-section {
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 160px;
+  }
+}
+
+.subtitle-blocked {
+  @extend .subtitle;
+  display: inline-block;
+
+  & span {
+    display: inline-block;
+  }
+  &__span {
+    text-transform: none;
+  }
+}
+
+ol.accordion {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+.course-module {
+  position: absolute;
+  left: 70%;
+  top: 25%;
+
+  opacity: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+
+    background-repeat: no-repeat;
+    background-image: url('../images/teachers-page/student.png');
+  }
+}
+
+.accordion__item-active ol.accordion__text-container {
+  margin-bottom: 20px;
+  padding: 16px 24px;
+}
+
+.accordion__text:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .descr__text {
@@ -79,4 +169,21 @@ $icons: 'diploma', 'teacher', 'manuscript';
 
 .js-descr > .descr::after {
   background-image: url('../images/questions/arrow-top.png');
+}
+
+.children-courses-card[data-action='hidden'] {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.courses-list {
+  margin-bottom: 64px;
+}
+
+.more-courses__btn {
+  margin: 0 auto;
 }

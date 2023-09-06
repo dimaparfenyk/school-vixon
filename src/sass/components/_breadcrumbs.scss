@@ -1,6 +1,7 @@
 .breadcrumbs {
   display: flex;
   margin-bottom: 32px;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs__link {

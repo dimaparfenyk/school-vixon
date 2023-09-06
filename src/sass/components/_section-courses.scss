@@ -1,7 +1,7 @@
 .subtitle {
   margin-bottom: 32px;
   color: $darkTextColor;
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
 
   font-family: Nunito Sans;
@@ -9,7 +9,10 @@
   text-transform: uppercase;
   @media screen and (min-width: 768px) {
     margin-bottom: 64px;
-    font-size: 40px;
+    font-size: 27px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
   }
 }
 
