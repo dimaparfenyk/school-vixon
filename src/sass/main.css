@@ -125,6 +125,17 @@ textarea {
   background-color: #5ca652;
 }
 
+.ref-btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .ref-btn {
+    margin-top: 64px;
+  }
+}
+
 .breadcrumbs {
   display: flex;
   margin-bottom: 32px;
@@ -195,9 +206,9 @@ textarea {
   align-items: center;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   overflow: auto;
-  width: 100vw;
+  width: 95vw;
   height: 100vh;
   z-index: 10;
   padding-top: 48px;
@@ -322,19 +333,30 @@ textarea {
   padding-bottom: 12px;
 }
 
-.nav-link {
+.nav-link, .nav-link[aria-current=page] {
   color: #0b221c;
   font-size: 14px;
   font-weight: 600;
   font-family: Nunito Sans;
 }
 @media screen and (min-width: 1200px) {
-  .nav-link {
+  .nav-link, .nav-link[aria-current=page] {
     font-size: 16px;
   }
 }
 
-.nav-link::after {
+.nav-link[aria-current=page] {
+  font-size: 15px;
+  font-weight: 700;
+}
+@media screen and (min-width: 1200px) {
+  .nav-link[aria-current=page] {
+    font-size: 17px;
+  }
+}
+
+.nav-link::after,
+.nav-link[aria-current=page]::after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -344,6 +366,9 @@ textarea {
   bottom: 0;
   background-color: #6bbc60;
   border-radius: 2px;
+}
+
+.nav-link::after, .nav-link[aria-current=page]::after {
   transform: scaleX(0);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -351,6 +376,10 @@ textarea {
 .nav-item:hover .nav-link::after,
 .nav-item:focus .nav-link::after {
   transform: scaleX(1);
+}
+
+.nav-link[aria-current=page]::after {
+  transform: none;
 }
 
 .phone-box {
@@ -1390,6 +1419,10 @@ ul.slick-dots li.slick-active button:before {
   display: flex;
 }
 
+.main {
+  background-image: url("../images/courses-card/course-bg.svg");
+}
+
 .base-container {
   padding-top: 24px;
   padding-bottom: 160px;
@@ -1423,7 +1456,8 @@ ul.slick-dots li.slick-active button:before {
   justify-content: center;
   border-radius: 9px 9px 0 0;
   position: relative;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .children-courses-card {
@@ -1436,8 +1470,7 @@ ul.slick-dots li.slick-active button:before {
   }
 }
 .children-courses-card:hover, .children-courses-card:focus {
-  box-shadow: 0 0 12px;
-  scale: 1.01;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
 }
 
 .children-courses-card:nth-child(3n+1) {
@@ -1493,7 +1526,7 @@ ul.slick-dots li.slick-active button:before {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .children-courses-card:hover .course-link {
@@ -1553,7 +1586,7 @@ ul.slick-dots li.slick-active button:before {
 
 .about-section {
   padding-bottom: 74px;
-  background-image: url("../images/page-about/about-us-page-bg1.png"), url("../images/page-about/about-us-page-bg1.png");
+  background-image: url("../images/page-about/about-us-page-bg1.png");
   background-repeat: no-repeat;
 }
 
@@ -2815,14 +2848,6 @@ ol.accordion, ol.acc {
   .children-courses-card[data-action=hidden] {
     display: flex;
   }
-}
-
-.courses-list {
-  margin-bottom: 64px;
-}
-
-.more-courses__btn {
-  margin: 0 auto;
 }
 
 .training-section {

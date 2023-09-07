@@ -1,10 +1,13 @@
 <header class="header">
   <div class="container">
-    <a href="/src/index.html" class="logo">
+    <a href="/" class="logo">
       <img class="logo-img" src="/src/images/logo.png" alt="Logo" />
     </a>
     <nav class="nav">
       <ul class="nav-list list">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Главная</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="/src/partials/about.html">О нас</a>
         </li>
@@ -47,46 +50,7 @@
       </svg>
     </button>
 
-    <!-- ----------HIDDEN MENU--------------- -->
-    <div class="mob-menu is-hidden">
-      <button class="mob-menu-closeBtn">
-        <svg class="icon-close" width="20" height="20">
-          <use href="/src/images/mob-menu/close-icon.svg#close-icon"></use>
-        </svg>
-      </button>
-      <ul class="mob-menu_list">
-        <li class="mob-menu_item">
-          <a class="mob-menu-link" href="/src/partials/about.html">О нас</a>
-        </li>
-        <li class="mob-menu_item">
-          <a class="mob-menu-link" href="/src/partials/children-courses.html"
-            >Детям</a
-          >
-        </li>
-        <li class="mob-menu_item">
-          <a class="mob-menu-link" href="/src/partials/teacher-courses.html"
-            >Учителям</a
-          >
-        </li>
-        <li class="mob-menu_item">
-          <a class="mob-menu-link" href="/src/partials/faq.html">Вопросы</a>
-        </li>
-        <li class="mob-menu_item">
-          <a class="mob-menu-link" href="/src/partials/contacts.html"
-            >Контакты</a
-          >
-        </li>
-      </ul>
-      <div class="mob-menu__telbox">
-        <button class="callback-btn">Обратная связь</button>
-        <a class="mob-menu-phone-link" href="tel:+88006592684">
-          <svg width="16px" height="16px">
-            <use href="/src/images/phone.svg#icon-phone"></use>
-          </svg>
-          +38 (800) 659-2684
-        </a>
-      </div>
-    </div>
+    <include src="./partials/mobile-menu.html"></include>
   </div>
 </header>
 

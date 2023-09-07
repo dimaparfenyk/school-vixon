@@ -1,3 +1,7 @@
+.main {
+  background-image: url('../images/courses-card/course-bg.svg');
+}
+
 .base-container {
   padding-top: 24px;
   padding-bottom: 160px;
@@ -12,6 +16,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+
   @media screen and (min-width: 768px) {
     gap: 20px;
   }
@@ -27,7 +32,9 @@
   justify-content: center;
   border-radius: 9px 9px 0 0;
   position: relative;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: none;
+
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 20px) / 2);
@@ -39,8 +46,7 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0 0 12px;
-    scale: 1.01;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
   }
 }
 
@@ -94,7 +100,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .children-courses-card:hover .course-link {
