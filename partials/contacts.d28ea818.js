@@ -1,0 +1,2 @@
+const e=document.querySelector(".header"),t=[...document.querySelectorAll(".nav-link")],n=[...document.querySelectorAll(".js-nav-link")],r=window.location.href;var o;(()=>{const e=((e,t)=>{const n=e.find((e=>e.href===t));if(n)return n})(t,r);e&&e.setAttribute("aria-current","page")})(),(()=>{const t=e.getBoundingClientRect().height;document.body.style.paddingTop=`${t}px`})(),o=r,n.filter((({href:e})=>e===o)).forEach((e=>{e.addEventListener("click",(e=>e.preventDefault()))}));
+//# sourceMappingURL=contacts.d28ea818.js.map
