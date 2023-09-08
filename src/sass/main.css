@@ -106,7 +106,7 @@ textarea {
   background-color: #ffb539;
   color: #0b221c;
   box-shadow: 7px 7px 6px 0px rgba(98, 90, 20, 0.25);
-  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .btn, .secondary-btn {
@@ -115,6 +115,7 @@ textarea {
 }
 .btn:hover, .secondary-btn:hover, .btn:focus, .secondary-btn:focus {
   background-color: #f7a71c;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
 }
 
 .secondary-btn {
@@ -167,6 +168,38 @@ textarea {
   content: " /";
   display: inline-block;
   padding: 0 4px;
+}
+
+.scroll-up-btn {
+  display: none;
+}
+@media screen and (min-width: 375px) {
+  .scroll-up-btn {
+    display: flex;
+    position: fixed;
+    right: 4px;
+    z-index: 10000000;
+    border: none;
+    background-color: orange;
+    border-radius: 50%;
+    padding: 6px;
+    box-shadow: inherit;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .scroll-up-btn:hover {
+    box-shadow: 0 0 20px rgba(184, 114, 1, 0.8);
+  }
+}
+@media screen and (min-width: 768px) {
+  .scroll-up-btn {
+    right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .scroll-up-btn {
+    right: 40px;
+    padding: 10px;
+  }
 }
 
 .header {
@@ -579,7 +612,6 @@ textarea {
   color: #0b221c;
   font-size: 24px;
   text-align: center;
-  font-family: Nunito Sans;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -676,7 +708,8 @@ textarea {
   position: relative;
 }
 
-.courses-category {
+.courses-link {
+  display: inline-block;
   position: absolute;
   left: 0;
   bottom: -16px;
@@ -689,7 +722,12 @@ textarea {
   box-shadow: 2px 5px 11px 0px rgba(153, 175, 153, 0.25);
   color: #0b221c;
   font-size: 24px;
-  font-family: Nunito Sans;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.courses-link:hover, .courses-link:focus {
+  color: #2d7c22;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
 }
 
 .about {
@@ -1863,6 +1901,10 @@ ul.slick-dots li.slick-active button:before {
 .title-container {
   padding-top: 24px;
   margin-bottom: 32px;
+}
+
+.main > .about-section {
+  background-image: none;
 }
 
 .company-location-wrapper {
