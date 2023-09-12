@@ -96,6 +96,11 @@
   }
 }
 
+.feedback-form__input-error {
+  @extend .feedback-form__input;
+  border: 2px solid #ff0000;
+}
+
 .form-title {
   margin: 0 auto;
   margin-bottom: 0;

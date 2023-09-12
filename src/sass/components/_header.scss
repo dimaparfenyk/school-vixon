@@ -37,9 +37,7 @@
   top: 0;
   right: 0;
 
-  overflow: auto;
-
-  width: 95vw;
+  width: 80vw;
   height: 100vh;
   z-index: 10;
 
@@ -49,10 +47,22 @@
   padding-right: 15px;
   background-color: #f4fff6;
 
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
   &.is-hidden {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
   }
 }
+
+.is-overflowHidden {
+  overflow: hidden;
+}
+
 .mob-menu-closeBtn {
   position: absolute;
   top: 24px;

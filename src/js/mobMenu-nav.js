@@ -3,11 +3,12 @@
 const mobMenuNavBtn = document.querySelector('.nav-menu-btn');
 const mobMenu = document.querySelector('.mob-menu');
 const mobMenuCloseBtn = document.querySelector('.mob-menu-closeBtn');
+const body = document.querySelector('body');
 
-mobMenuNavBtn.addEventListener('click', () => {
-  mobMenu.classList.remove('is-hidden');
-});
+mobMenuNavBtn.addEventListener('click', toggleMobMenuClass);
+mobMenuCloseBtn.addEventListener('click', toggleMobMenuClass);
 
-mobMenuCloseBtn.addEventListener('click', () => {
-  mobMenu.classList.add('is-hidden');
-});
+function toggleMobMenuClass() {
+  mobMenu.classList.toggle('is-hidden');
+  body.classList.toggle('is-overflowHidden');
+}

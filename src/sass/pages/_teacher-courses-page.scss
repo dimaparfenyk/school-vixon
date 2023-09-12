@@ -102,7 +102,7 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
 .course-card__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 40px;
   @media screen and (min-width: 768px) {
     gap: 32px;
   }
@@ -127,6 +127,10 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
 .meta-box {
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    min-width: 360px;
+  }
 }
 
 .meta-list {
@@ -134,60 +138,72 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
 }
 
 .meta-list__text {
-  display: flex;
-  align-items: center;
   color: #0b221c;
   font-size: 14px;
   font-weight: 600;
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
+    font-size: 15px;
   }
-
-  &::before {
-    content: '';
-    width: 20px;
-    height: 16px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-right: 12px;
-
-    @media screen and (min-width: 375px) {
-      width: 30px;
-      height: 26px;
-    }
-
-    @media screen and (min-width: 768px) {
-      padding-right: 18px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 40px;
-      height: 30px;
-      padding-right: 24px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
   }
 }
 
 .meta-list__item {
   display: flex;
   flex-direction: row;
+  position: relative;
+  padding-left: 44px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 52px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 64px;
+  }
 
   &:not(:last-child) {
-    margin-bottom: 16px;
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
+  }
+}
+
+.meta-list__item::before {
+  content: '';
+  width: 28px;
+  height: 22px;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (min-width: 375px) {
+    width: 34px;
+    height: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 40px;
+    height: 30px;
   }
 }
 
 @each $iconName in $icons {
-  .meta-list__text.icon-#{$iconName}::before {
+  .meta-list__item.icon-#{$iconName}::before {
     background-image: url('../images/teachers-page/#{$iconName}.png');
   }
 }
+.icon-calendar.meta-list__item {
+  @media screen and (max-width: 374px) {
+    padding-left: 0;
+  }
+}
 
-.icon-calendar::before {
+.icon-calendar.meta-list__item::before {
+  content: none;
   @media screen and (min-width: 375px) {
     content: '';
     width: 30px;
@@ -196,19 +212,16 @@ $icons: 'clock', 'flag', 'person', 'pencil', 'book', 'price', 'users';
     background-image: url('../images/teachers-page/calendar.png');
     background-repeat: no-repeat;
     background-size: contain;
-    padding-right: 12px;
   }
 
   @media screen and (min-width: 768px) {
     width: 30px;
     height: 26px;
-    padding-right: 18px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 40px;
     height: 30px;
-    padding-right: 24px;
   }
 }
 

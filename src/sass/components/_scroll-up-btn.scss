@@ -1,7 +1,7 @@
 .scroll-up-btn {
   display: none;
 
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 320px) {
     display: flex;
 
     position: fixed;

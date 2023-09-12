@@ -1,45 +1,56 @@
-<div class="backdrop is-hidden">
+<div class="backdrop is-visible">
   <div class="modal">
+    <div class="after-payment-box is-hidden">
+      <h3 class="modal-title">Поздравляем!</h3>
+      <img class="modal-logo" src="/src/images/logo.png" alt="Logo" />
+
+      <p class="modal-text">
+        На почту была отправлена ​​ссылка для оплаты курса
+      </p>
+      <button type="button" class="secondary-btn modal__btn" data-modal-close>
+        На главную
+      </button>
+    </div>
+
     <form action="" class="modal__form">
       <h3 class="modal-title">записатся</h3>
-      <div class="form-content-box">
-        <div class="form-field">
-          <input
-            class="feedback-form__input"
-            type="text"
-            name="text"
-            placeholder="Name"
-          />
-          <input
-            class="feedback-form__input"
-            type="number"
-            name="phone"
-            placeholder="Phone"
-          />
-          <input
-            class="feedback-form__input"
-            type="email"
-            name="email"
-            placeholder="Email"
-          />
 
-          <textarea
-            class="feedback-form__comments"
-            name="feedback"
-            rows="8"
-            placeholder="Enter your message here..."
-          ></textarea>
-        </div>
-        <div class="modal__btn-container">
-          <button
-            type="button"
-            class="secondary-btn modal__btn"
-            data-modal-close
-          >
-            Оплатить позже
-          </button>
-          <button type="submit" class="btn modal__btn">Оплатить LiqPay</button>
-        </div>
+      <div class="form-field">
+        <input
+          class="feedback-form__input"
+          type="text"
+          name="name"
+          data-require=""
+          placeholder="Name"
+        />
+        <input
+          class="feedback-form__input"
+          type="number"
+          name="phone"
+          placeholder="Phone"
+          data-require=""
+        />
+        <input
+          class="feedback-form__input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          data-require=""
+        />
+        <textarea
+          class="feedback-form__comments"
+          name="feedback"
+          rows="8"
+          placeholder="Enter your message here..."
+        ></textarea>
+      </div>
+      <div class="modal__btn-container">
+        <button type="button" class="secondary-btn modal__btn" data-modal-close>
+          Оплатить позже
+        </button>
+        <button type="submit" class="btn modal__btn" data-action="LiqPay">
+          Оплатить LiqPay
+        </button>
       </div>
     </form>
 

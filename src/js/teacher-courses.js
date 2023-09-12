@@ -1,4 +1,5 @@
-import Pikaday from 'pikaday';
+const Pikaday = require('pikaday');
+
 let currentYear = new Date().getFullYear();
 
 const courseCards = document.querySelectorAll('.course-card');
