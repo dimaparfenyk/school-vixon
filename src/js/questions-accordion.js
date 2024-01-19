@@ -14,3 +14,4 @@ function toggleClassName(e) {
     curParentItem.classList.toggle('accordion__item-active');
   }
 }
+// document.addEventListener('XY', function () {}, { passive: true });

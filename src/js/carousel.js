@@ -1,5 +1,3 @@
-'use strict';
-
 const $ = require('jquery');
 require('slick-carousel');
 
